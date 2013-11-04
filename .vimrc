@@ -1,0 +1,16 @@
+syntax enable
+syntax on
+set wrap
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set ignorecase
+set smartcase
+set hlsearch
+set showmatch
+set incsearch
+set autoindent
+set vb
+set nu
+set nocompatible
+let @t='>>j'
