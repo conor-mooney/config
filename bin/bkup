@@ -1,0 +1,8 @@
+#!/bin/sh
+
+BKUP_DIR=~/.backup
+DATE=`date +'%Y_%m_%d_%H_%M'`
+
+bkup_file=`basename $1`.$DATE
+cp $1 $BKUP_DIR/$bkup_file
+chmod -w $BKUP_DIR/$bkup_file
