@@ -11,3 +11,5 @@
     ft = fetch
     ps = push
     pl = pull
+    lg = log
+    mg = merge
