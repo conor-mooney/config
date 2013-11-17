@@ -12,4 +12,6 @@
     ps = push
     pl = pull
     lg = log
+    gr = log --pretty=format:'%h : %s - %d' --graph
     mg = merge
+    df = diff
