@@ -3,6 +3,8 @@
 	email = conor.mooney@gmail.com
 [color]
 	ui = true
+[core]
+	editor = vi
 [alias]
     st = status
     co = checkout
@@ -11,7 +13,6 @@
     ft = fetch
     ps = push
     pl = pull
+    bl = blame
     lg = log
     gr = log --pretty=format:'%h : %s - %d' --graph
-    mg = merge
-    df = diff
