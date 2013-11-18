@@ -15,4 +15,4 @@
     pl = pull
     bl = blame
     lg = log
-    gr = log --pretty=format:'%h : %s - %d' --graph
+    gr = log --pretty=format:'%h : [%an] %s <%d>' --graph
