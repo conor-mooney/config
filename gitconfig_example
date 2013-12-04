@@ -19,3 +19,4 @@
     gr = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph
     gf = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph --name-status
     sw = show
+    url = config --get remote.origin.url
