@@ -1,10 +1,13 @@
 Configuration and utilities
 
-*commaon*
+*common*
+
 Common to all platforms
 
 *linux*
+
 Linux specific
 
 *osx*
+
 OS-X specific
