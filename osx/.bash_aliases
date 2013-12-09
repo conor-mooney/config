@@ -11,8 +11,6 @@ alias py=python
 
 alias vboxmanage=VBoxManage
 alias vboxheadless=VBoxHeadless
-
 alias vg=vagrant
 
 alias git_push='git push origin master'
-alias git_graph="git log --pretty=format:'%h : %s - %d' --graph"
