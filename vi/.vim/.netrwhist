@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/conor'
+let g:netrw_dirhist_2='/Users/conor/.vim'
+let g:netrw_dirhist_3='/Users/conor'
+let g:netrw_dirhist_4='/Users/conor/bin'
+let g:netrw_dirhist_5='/Users/conor'
+let g:netrw_dirhist_6='/Users/conor/projects'
+let g:netrw_dirhist_7='/Users/conor/projects/python'

@@ -15,3 +15,5 @@ set vb
 set nu
 set nocompatible
 let @t='>>j'
+call pathogen#incubate()
+call pathogen#helptags()
