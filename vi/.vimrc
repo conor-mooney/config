@@ -15,5 +15,6 @@ set vb
 set nu
 set nocompatible
 let @t='>>j'
+map <Leader>j :CommandTJump<CR>
 call pathogen#incubate()
 call pathogen#helptags()
