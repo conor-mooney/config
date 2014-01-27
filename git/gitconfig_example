@@ -6,17 +6,20 @@
 [core]
 	editor = vi
 [alias]
-    st = status
-    co = checkout
-    ci = commit
-    br = branch
-    ft = fetch
-    ps = push
-    pl = pull
     bl = blame
-    lg = log
-    lf = log --name-status
-    gr = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph
+    br = branch
+    ci = commit
+    cl = clone
+    co = checkout
+    dc = diff --cached
+    df = diff
+    ft = fetch
     gf = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph --name-status
+    gr = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph
+    lf = log --name-status
+    lg = log
+    pl = pull
+    ps = push
+    st = status
     sw = show
     url = config --get remote.origin.url
