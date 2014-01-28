@@ -13,6 +13,7 @@
     co = checkout
     dc = diff --cached
     df = diff
+    dt = difftool
     ft = fetch
     gf = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph --name-status
     gr = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph
