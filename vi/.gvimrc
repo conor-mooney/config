@@ -10,3 +10,4 @@ colorscheme desert
 autocmd vimenter * TlistOpen
 autocmd vimenter * NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
+let NERDTreeShowBookmarks=1
