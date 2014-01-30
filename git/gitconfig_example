@@ -1,10 +1,9 @@
 [user]
-	name = conor-mooney
-	email = conor.mooney@gmail.com
-[color]
-	ui = true
+	name = Conor Mooney
+	email = cmooney@groupon.com
 [core]
 	editor = vi
+	excludesfile = /Users/cmooney/.gitignore_global
 [alias]
     bl = blame
     br = branch
@@ -24,3 +23,21 @@
     st = status
     sw = show
     url = config --get remote.origin.url
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = true
+[diff]
+	external = git-diff-wrapper
+[remote "origin"]
+    push = refs/heads/*:refs/heads/*
+    push = refs/tags/*:refs/tags/*
