@@ -28,8 +28,11 @@ endfunction
 
 let @t='>>j'
 nmap <Leader>j :CommandTJump<CR>
-nmap <Leader>d :call DiffWithFileFromDisk()<cr>
+nmap <Leader>d :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
+nmap <Leader>g :TlistOpen<CR>
+nmap <Leader>n :NERDTree<CR>
+nmap <Leader>z :FufFile<CR>
 
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 
