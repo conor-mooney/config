@@ -33,6 +33,7 @@ nmap <Leader>f :Ack
 nmap <Leader>g :TlistOpen<CR>
 nmap <Leader>n :NERDTree<CR>
 nmap <Leader>z :FufFile<CR>
+nmap <Leader>e :Explore<CR>
 
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 
