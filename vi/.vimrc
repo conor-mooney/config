@@ -37,6 +37,7 @@ nmap <Leader>z :FufFile<CR>
 nmap <Leader>e :Explore<CR>
 nmap <Leader>w :bp\|bd #<CR>
 nmap <Leader>q <C-W>q<CR>
+nmap <Leader>c :diffthis<CR>
 
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 
