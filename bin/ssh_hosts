@@ -1,0 +1,2 @@
+#/usr/bin/env bash
+grep "^Host" $HOME/.ssh/config | sed "s/^Host//" | sort -i
