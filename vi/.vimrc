@@ -32,11 +32,14 @@ function! DiffWithFileFromDisk()
     diffthis
 endfunction
 
+let Tlist_Use_Right_Window   = 1
+
 let @t='>>j'
 nmap <Leader>j :CommandTJump<CR>
 nmap <Leader>d :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
-nmap <Leader>g :TagbarToggle<CR>
+nmap <Leader>g :Tlist<CR>
+nmap <Leader>r :TagbarToggle<CR>
 nmap <Leader>n :NERDTree<CR>
 nmap <Leader>z :FufFile<CR>
 nmap <Leader>e :Explore<CR>

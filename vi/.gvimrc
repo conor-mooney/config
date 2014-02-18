@@ -12,7 +12,7 @@ highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black gu
 #set lines=70 columns=200
 #set guifont=Monospace\ 9
 
-autocmd vimenter * TagbarOpen
+autocmd vimenter * Tlist
 autocmd vimenter * NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
 let NERDTreeShowBookmarks=1
