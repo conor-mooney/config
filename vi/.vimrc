@@ -44,6 +44,7 @@ nmap <Leader>w :bp\|bd #<CR>
 nmap <Leader>q <C-W>q<CR>
 nmap <Leader>Q :qa!<CR>
 nmap <Leader>c :diffthis<CR>
+nmap <Leader>o :diffoff!<CR>
 
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 
