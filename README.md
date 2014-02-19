@@ -11,3 +11,6 @@ Linux specific
 *osx*
 
 OS-X specific
+
+*vi*
+vi plugins and configuration

@@ -40,7 +40,7 @@ nmap <Leader>d :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
 nmap <Leader>g :Tlist<CR>
 nmap <Leader>r :TagbarToggle<CR>
-nmap <Leader>n :NERDTree<CR>
+nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>z :FufFile<CR>
 nmap <Leader>e :Explore<CR>
 nmap <Leader>w :bp\|bd #<CR>
