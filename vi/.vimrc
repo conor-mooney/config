@@ -36,7 +36,7 @@ let Tlist_Use_Right_Window   = 1
 
 let @t='>>j'
 nmap <Leader>j :CommandTJump<CR>
-nmap <Leader>d :call DiffWithFileFromDisk()<CR>
+nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
 nmap <Leader>g :Tlist<CR>
 nmap <Leader>r :TagbarToggle<CR>

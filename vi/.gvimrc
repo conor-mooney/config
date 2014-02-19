@@ -5,12 +5,12 @@ highlight DiffDelete cterm=none ctermfg=black ctermbg=Red gui=none guifg=black g
 highlight DiffChange cterm=none ctermfg=black ctermbg=Yellow gui=none guifg=black guibg=Yellow
 highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black guibg=Cyan
 
-# OSX - MacVim
-#set gfn=Menlo\ Regular:h12
+" OSX - MacVim
+"set gfn=Menlo\ Regular:h12
 
-# Linux - gvim
-#set lines=70 columns=200
-#set guifont=Monospace\ 9
+" Linux - gvim
+"set lines=70 columns=200
+"set guifont=Ubuntu\ Mono\ 11
 
 autocmd vimenter * Tlist
 autocmd vimenter * NERDTree

@@ -10,7 +10,7 @@
     ci = commit
     cl = clone
     co = checkout
-    dc = diff --cached
+    dc = difftool --cached
     df = diff
     dt = difftool
     ft = fetch
@@ -25,20 +25,15 @@
     sw = show
     url = config --get remote.origin.url
 [merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-	trustExitCode = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	tool = mvimdiff
 [color]
 	ui = true
 [diff]
-	external = git-diff-wrapper
+	tool = default-difftool
+[difftool "default-difftool"]
+    cmd = mvim -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
+[difftool]
+	prompt = false
 [remote "origin"]
     push = refs/heads/*:refs/heads/*
     push = refs/tags/*:refs/tags/*
