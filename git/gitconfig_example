@@ -14,8 +14,8 @@
     df = diff
     dt = difftool
     ft = fetch
-    gf = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph --name-status
-    gr = log --pretty=format:'%h : [%cN - %cr] %s <%d>' --graph
+    gf = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --name-status
+    gr = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative 
     lf = log --name-status
     lg = log
     pl = pull
