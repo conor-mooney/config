@@ -50,6 +50,7 @@ nmap <Leader>c :diffthis<CR>
 nmap <Leader>o :diffoff!<CR>
 
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
+let showmarks_enable = 0
 
 call pathogen#incubate()
 call pathogen#helptags()
