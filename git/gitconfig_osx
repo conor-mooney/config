@@ -19,6 +19,8 @@
     gr = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative 
     lf = log --pretty=format:'%Cred%H%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%ci)%Creset' --name-status
     lg = log --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
+    mg = merge
+    mt = mergetool
     pl = pull
     ps = push
     rl = rev-list --all
@@ -26,7 +28,7 @@
     sw = show
     url = config --get remote.origin.url
 [mergetool "mvimdiff"]
-    cmd = mvim -d -f $LOCAL $BASE $REMOTE
+    cmd = mvim -d -f $MERGED $LOCAL $BASE $REMOTE
 [merge]
     tool = mvimdiff
 	prompt = false
