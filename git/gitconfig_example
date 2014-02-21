@@ -10,9 +10,10 @@
     ci = commit
     cl = clone
     co = checkout
-    dc = difftool --cached
+    dc = difftool --dir-diff --cached
     df = diff
-    dt = difftool
+    ds = difftool --dir-diff --staged
+    dt = difftool --dir-diff
     ft = fetch
     gf = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --name-status
     gr = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative 
@@ -24,8 +25,12 @@
     st = status
     sw = show
     url = config --get remote.origin.url
+[mergetool "mvimdiff"]
+    cmd = mvim -d -f $LOCAL $BASE $REMOTE
 [merge]
-	tool = mvimdiff
+    tool = mvimdiff
+	prompt = false
+    keepBackup = false
 [color]
 	ui = true
 [diff]
