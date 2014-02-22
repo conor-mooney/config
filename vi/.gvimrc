@@ -8,11 +8,16 @@ highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black gu
 " OSX - MacVim
 "set gfn=Menlo\ Regular:h12
 
-" Linux - gvim
-"set lines=70 columns=200
+" Linux
+"set lines=80 columns=300
 "set guifont=Ubuntu\ Mono\ 11
 
-autocmd vimenter * Tlist
-autocmd vimenter * NERDTree
-autocmd vimenter * if !argc() | NERDTree | endif
+if &diff
+    autocmd vimenter * TlistClose
+    autocmd vimenter * NERDTreeClose
+else
+    autocmd vimenter * TlistToggle
+    autocmd vimenter * NERDTreeToggle | wincmd p
+endif
+
 let NERDTreeShowBookmarks=1
