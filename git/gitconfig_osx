@@ -28,7 +28,7 @@
     sw = show
     url = config --get remote.origin.url
 [mergetool "mvimdiff"]
-    cmd = mvim -d -c ':TlistToggle' -f $MERGED $LOCAL $BASE $REMOTE
+    cmd = mvim -d -f $MERGED $LOCAL $BASE $REMOTE
 [merge]
     tool = mvimdiff
 	prompt = false
@@ -38,7 +38,7 @@
 [diff]
 	tool = default-difftool
 [difftool "default-difftool"]
-    cmd = mvim -c ':TlistToggle' -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
+    cmd = mvim -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
 [difftool]
 	prompt = false
 [remote "origin"]

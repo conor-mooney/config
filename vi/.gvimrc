@@ -13,10 +13,10 @@ highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black gu
 "set guifont=Ubuntu\ Mono\ 11
 
 if &diff
-    autocmd vimenter * TlistClose
+    autocmd vimenter * TagbarClose
     autocmd vimenter * NERDTreeClose
 else
-    autocmd vimenter * TlistToggle
+    autocmd vimenter * TagbarToggle
     autocmd vimenter * NERDTreeToggle | wincmd p
 endif
 

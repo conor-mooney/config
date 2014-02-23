@@ -38,7 +38,7 @@ let @t='>>j'
 nmap <Leader>j :CommandTJump<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
-nmap <Leader>g :Tlist<CR>
+nmap <Leader>g :TagbarToggle<CR>
 nmap <Leader>r :TagbarToggle<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>z :FufFile<CR>
