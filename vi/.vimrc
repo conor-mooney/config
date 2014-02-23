@@ -39,7 +39,6 @@ nmap <Leader>j :CommandTJump<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
 nmap <Leader>g :TagbarToggle<CR>
-nmap <Leader>r :TagbarToggle<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>z :FufFile<CR>
 nmap <Leader>e :Explore<CR>
