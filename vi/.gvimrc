@@ -5,6 +5,9 @@ highlight DiffDelete cterm=none ctermfg=black ctermbg=Red gui=none guifg=black g
 highlight DiffChange cterm=none ctermfg=black ctermbg=Yellow gui=none guifg=black guibg=Yellow
 highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black guibg=Cyan
 
+highlight CSVColumnEven term=bold ctermbg=4 guibg=DarkYellow
+highlight CSVColumnOdd  term=bold ctermbg=5 guibg=DarkGreen
+
 " OSX - MacVim
 "set gfn=Menlo\ Regular:h12
 
