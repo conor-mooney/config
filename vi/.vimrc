@@ -6,6 +6,9 @@ highlight DiffDelete cterm=none ctermfg=black ctermbg=Red gui=none guifg=black g
 highlight DiffChange cterm=none ctermfg=black ctermbg=Yellow gui=none guifg=black guibg=Yellow
 highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black guibg=Cyan
 
+highlight CSVColumnEven term=bold ctermfg=DarkYellow guifg=DarkYellow
+highlight CSVColumnOdd  term=bold ctermfg=DarkCyan guifg=DarkCyan
+
 set nocompatible
 set background=dark
 set wrap
@@ -34,6 +37,7 @@ function! DiffWithFileFromDisk()
 endfunction
 
 let Tlist_Use_Right_Window   = 1
+let g:csv_no_conceal = 1
 
 let @t='>>j'
 nmap <Leader>j :CommandTJump<CR>
