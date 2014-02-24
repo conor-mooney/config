@@ -21,6 +21,7 @@ set autoindent
 set vb
 set nu
 set nocompatible
+set mouse=a
 
 function! DiffWithFileFromDisk()
     let filename=expand('%')
