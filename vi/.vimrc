@@ -9,6 +9,9 @@ highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black gu
 highlight CSVColumnEven term=bold ctermfg=DarkYellow guifg=DarkYellow
 highlight CSVColumnOdd  term=bold ctermfg=DarkCyan guifg=DarkCyan
 
+let airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
+
 set nocompatible
 set background=dark
 set wrap
@@ -25,6 +28,8 @@ set vb
 set nu
 set nocompatible
 set mouse=a
+set t_Co=256
+set encoding=utf-8
 
 function! DiffWithFileFromDisk()
     let filename=expand('%')

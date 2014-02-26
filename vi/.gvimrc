@@ -8,12 +8,17 @@ highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black gu
 highlight CSVColumnEven term=bold ctermbg=4 guifg=Cyan
 highlight CSVColumnOdd  term=bold ctermbg=5 guifg=LightGreen
 
-" OSX - MacVim
-"set gfn=Menlo\ Regular:h12
-
-" Linux
+"Linux fonts
 "set lines=80 columns=300
 "set guifont=Ubuntu\ Mono\ 11
+"set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
+""set guifont=Liberation\ Mono\ for\ Powerline\ 10
+
+"OS-X Fonts
+"set gfn=Menlo\ Regular:h12
+"set gfn=Liberation\ Mono\ for\ Powerline:h11
+"set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h11
+"set gfn=Droid\ Sans\ Mono\ for\ Powerline:h11
 
 if &diff
     autocmd vimenter * TagbarClose
