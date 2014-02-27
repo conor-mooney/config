@@ -9,7 +9,6 @@ highlight CSVColumnEven term=bold ctermbg=4 guifg=Cyan
 highlight CSVColumnOdd  term=bold ctermbg=5 guifg=LightGreen
 
 "Linux fonts
-"set lines=80 columns=300
 "set guifont=Ubuntu\ Mono\ 11
 "set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
 ""set guifont=Liberation\ Mono\ for\ Powerline\ 10
@@ -29,3 +28,5 @@ else
 endif
 
 let NERDTreeShowBookmarks=1
+
+"set lines=80 columns=300

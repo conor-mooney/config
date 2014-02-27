@@ -58,6 +58,10 @@ nmap <Leader>Q :qa!<CR>
 nmap <Leader>c :diffthis<CR>
 nmap <Leader>o :diffoff!<CR>
 
+nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
+nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
+nnoremap ,g :call FilteringGetForSource().return()<CR>
+
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 let showmarks_enable = 0
 
