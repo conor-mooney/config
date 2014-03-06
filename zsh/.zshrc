@@ -60,4 +60,6 @@ cdpath=(. /Users/cmooney /Users/cmooney/Documents /Users/cmooney/Documents/organ
 
 # use git-prompt
 source ~/.zsh/git-prompt/zshrc.sh
-PROMPT='%{$fg[green]%}%B%m:%{$fg[yellow]%}%1~%b$(git_super_status)%# '
+PROMPT='%{$fg[green]%}%B%m:%{$fg[yellow]%}%1~%b%# '
+RPROMPT='$(git_super_status)'
+
