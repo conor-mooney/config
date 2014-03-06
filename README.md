@@ -6,8 +6,8 @@ bin
 ---
 Contains utilities (mostly Bash shell) that I find useful.
 
-* `ack` a copy of the Ack recursive grep utility
-* `bkup` a backup script that copies specified files into `~/.backlup`
+* `ack` - a copy of the Ack recursive grep utility
+* `bkup` - a backup script that copies specified files into `~/.backlup`
 * `git-diffall` - needed by Git difftool for use with Git prior to version 1.7.11
 * `listen_ports` - list all ports that are being listened on.
 * `ls_tunnels` - list all active ssh tunnels
@@ -77,6 +77,7 @@ Plugins and configurations are applicable to both text and graphic (`gvim` on Li
 **command-t**
 
 * This requires ruby to install and run.
+
 1. Using rvm set Ruby version to 1.8.7
 2. From `commandt` run `$ ruby rake`
 3. From `commandt/ruby/commandt` run `$ ruby extconf.rb`
