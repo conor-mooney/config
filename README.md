@@ -44,36 +44,38 @@ Plugins and configurations are applicable to both text and graphic (`gvim` on Li
     .vim
     |-- autoload
     +-- bundle
-    |   +-- L9
-    |   +-- ack
-    |   +-- command-t
-    |   +-- csv.vim
-    |   +-- delimitmate
-    |   +-- dirdiff
-    |   +-- fugitive
-    |   +-- fuzzy-finder
-    |   +-- nerdcommenter
-    |   +-- nerdtree
-    |   +-- quich-filter
-    |   +-- showmarks
-    |   +-- supertab
-    |   +-- tagbar
-    |   +-- taglist
-    |   +-- vim-airline
-    |   +-- vim-coffee-script
-    |   +-- vim-mustache-handlebars
-    |   +-- vim-powerline
-    |   +-- vim-signify
-    |   +-- vim-unimpaired
-    |   +-- yaml
+    |   +-- L9
+    |   +-- ack
+    |   +-- command-t
+    |   +-- csv.vim
+    |   +-- delimitmate
+    |   +-- dirdiff
+    |   +-- fugitive
+    |   +-- fuzzy-finder
+    |   +-- nerdcommenter
+    |   +-- nerdtree
+    |   +-- quich-filter
+    |   +-- showmarks
+    |   +-- supertab
+    |   +-- tagbar
+    |   +-- taglist
+    |   +-- vim-airline
+    |   +-- vim-coffee-script
+    |   +-- vim-mustache-handlebars
+    |   +-- vim-powerline
+    |   +-- vim-signify
+    |   +-- vim-unimpaired
+    |   +-- yaml
     +-- colors
 
 *Pathogen* is used to manage the VI plugins.  Most plugins will run by simply putting them in the `bundle` folder but some plugins require some extra work to get them up and running:
 
 **ack**
+
 * This ack pluging requires you to have already installed the ack recurisive grep utility.  The plugin just glues `ack` and `vi` together.
 
 **command-t**
+
 * This requires ruby to install and run.
 1. Using rvm set Ruby version to 1.8.7
 2. From `commandt` run `$ ruby rake`
@@ -81,12 +83,14 @@ Plugins and configurations are applicable to both text and graphic (`gvim` on Li
 4. From `commandt/ruby/commandt` run `$ make`
 
 **tagbar / taglist**
-* Requires brew version of ctags to run on OS-X
+
+* Requires the brew version of ctags to run on OS-X - `$ brew install ctags`
 * Need to add sample `.ctags` file in `ctags` folder to work with Coffeescript
 
 **powerline**
+
 * This integrates the powerline fonts into the Airline plugin.  Airline works fine without these fonts, the improvement in appearance using powerline is marginal.  You need to install the Powerline fonts in addtion to this VI plugin.
-* https://powerline.readthedocs.org/en/latest/introduction.html 
+* see [installing powerline fonts](https://powerline.readthedocs.org/en/latest/introduction.html) 
 
 zsh
 ---
