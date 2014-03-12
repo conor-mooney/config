@@ -30,6 +30,7 @@ set nocompatible
 set mouse=a
 set t_Co=256
 set encoding=utf-8
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 function! DiffWithFileFromDisk()
     let filename=expand('%')
