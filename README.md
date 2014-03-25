@@ -44,66 +44,66 @@ Plugins and configurations are applicable to both text and graphic (`gvim` on Li
     .vim
     +-- autoload
     +-- available_plugins
-    |   +-- L9
-    |   +-- ack
-    |   +-- command-t
-    |   +-- csv.vim
-    |   +-- ctrlp.vim
-    |   +-- delmitmate
-    |   +-- dirdiff
-    |   +-- fugitive
-    |   +-- fuzzy-finder
-    |   +-- hexman
-    |   +-- nerdcommenter
-    |   +-- nerdtree
-    |   +-- quich-filter
-    |   +-- showmarks
-    |   +-- snipmate
-    |   +-- supertab
-    |   +-- syntastic
-    |   +-- tagbar
-    |   +-- taglist
-    |   +-- vim-airline
-    |   +-- vim-autoformat
-    |   +-- vim-coffee-script
-    |   +-- vim-mustache-handlebars
-    |   +-- vim-powerline
-    |   +-- vim-signify
-    |   +-- vim-surround
-    |   +-- vim-unimpaired
-    |   +-- yaml
+    |   +-- L9
+    |   +-- ack
+    |   +-- command-t
+    |   +-- csv.vim
+    |   +-- ctrlp.vim
+    |   +-- delmitmate
+    |   +-- dirdiff
+    |   +-- fugitive
+    |   +-- fuzzy-finder
+    |   +-- hexman
+    |   +-- nerdcommenter
+    |   +-- nerdtree
+    |   +-- quich-filter
+    |   +-- showmarks
+    |   +-- snipmate
+    |   +-- supertab
+    |   +-- syntastic
+    |   +-- tagbar
+    |   +-- taglist
+    |   +-- vim-airline
+    |   +-- vim-autoformat
+    |   +-- vim-coffee-script
+    |   +-- vim-mustache-handlebars
+    |   +-- vim-powerline
+    |   +-- vim-signify
+    |   +-- vim-surround
+    |   +-- vim-unimpaired
+    |   +-- yaml
     +-- bundle
-    |   +-- L9 -> ../available_plugins/L9
-    |   +-- ack -> ../available_plugins/ack
-    |   +-- command-t -> ../available_plugins/command-t
-    |   +-- csv.vim -> ../available_plugins/csv.vim
-    |   +-- ctrlp.vim -> ../available_plugins/ctrlp.vim
-    |   +-- delmitmate -> ../available_plugins/delmitmate
-    |   +-- dirdiff -> ../available_plugins/dirdiff
-    |   +-- fugitive -> ../available_plugins/fugitive
-    |   +-- fuzzy-finder -> ../available_plugins/fuzzy-finder
-    |   +-- hexman -> ../available_plugins/hexman
-    |   +-- nerdcommenter -> ../available_plugins/nerdcommenter
-    |   +-- nerdtree -> ../available_plugins/nerdtree
-    |   +-- quich-filter -> ../available_plugins/quich-filter
-    |   +-- showmarks -> ../available_plugins/showmarks
-    |   +-- snipmate -> ../available_plugins/snipmate
-    |   +-- supertab -> ../available_plugins/supertab
-    |   +-- syntastic -> ../available_plugins/syntastic
-    |   +-- tagbar -> ../available_plugins/tagbar
-    |   +-- taglist -> ../available_plugins/taglist
-    |   +-- vim-airline -> ../available_plugins/vim-airline
-    |   +-- vim-autoformat -> ../available_plugins/vim-autoformat
-    |   +-- vim-coffee-script -> ../available_plugins/vim-coffee-script
-    |   +-- vim-mustache-handlebars -> ../available_plugins/vim-mustache-handlebars
-    |   +-- vim-powerline -> ../available_plugins/vim-powerline
-    |   +-- vim-signify -> ../available_plugins/vim-signify
-    |   +-- vim-surround -> ../available_plugins/vim-surround
-    |   +-- vim-unimpaired -> ../available_plugins/vim-unimpaired
-    |   +-- yaml -> ../available_plugins/yaml
+    |   +-- L9 -> ../available_plugins/L9
+    |   +-- ack -> ../available_plugins/ack
+    |   +-- command-t -> ../available_plugins/command-t
+    |   +-- csv.vim -> ../available_plugins/csv.vim
+    |   +-- ctrlp.vim -> ../available_plugins/ctrlp.vim
+    |   +-- delmitmate -> ../available_plugins/delmitmate
+    |   +-- dirdiff -> ../available_plugins/dirdiff
+    |   +-- fugitive -> ../available_plugins/fugitive
+    |   +-- fuzzy-finder -> ../available_plugins/fuzzy-finder
+    |   +-- hexman -> ../available_plugins/hexman
+    |   +-- nerdcommenter -> ../available_plugins/nerdcommenter
+    |   +-- nerdtree -> ../available_plugins/nerdtree
+    |   +-- quich-filter -> ../available_plugins/quich-filter
+    |   +-- showmarks -> ../available_plugins/showmarks
+    |   +-- snipmate -> ../available_plugins/snipmate
+    |   +-- supertab -> ../available_plugins/supertab
+    |   +-- syntastic -> ../available_plugins/syntastic
+    |   +-- tagbar -> ../available_plugins/tagbar
+    |   +-- taglist -> ../available_plugins/taglist
+    |   +-- vim-airline -> ../available_plugins/vim-airline
+    |   +-- vim-autoformat -> ../available_plugins/vim-autoformat
+    |   +-- vim-coffee-script -> ../available_plugins/vim-coffee-script
+    |   +-- vim-mustache-handlebars -> ../available_plugins/vim-mustache-handlebars
+    |   +-- vim-powerline -> ../available_plugins/vim-powerline
+    |   +-- vim-signify -> ../available_plugins/vim-signify
+    |   +-- vim-surround -> ../available_plugins/vim-surround
+    |   +-- vim-unimpaired -> ../available_plugins/vim-unimpaired
+    |   +-- yaml -> ../available_plugins/yaml
     +-- colors
 
-*Pathogen* is used to manage the VI plugins.  Most plugins will run by simply putting them in the `bundle` folder but some plugins require some extra work to get them up and running. To make it easy to enable / disable individual plugins, I put my plgins into a folder called `availabale_plugins` and create a symbolic link to them from the `bundle` folder.
+*Pathogen* is used to manage the VI plugins.  Most plugins will run by simply putting them in the `bundle` folder but some plugins require some extra work to get them up and running. To make it easy to enable / disable individual plugins, I put my plgins into a folder called `available_plugins` and create a symbolic link to them from the `bundle` folder.
 
 **ack**
 
