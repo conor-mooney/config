@@ -13,6 +13,7 @@ let airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 
 set nocompatible
+set laststatus=2
 set background=dark
 set wrap
 set tabstop=4
