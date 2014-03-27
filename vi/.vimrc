@@ -73,9 +73,12 @@ nmap <Leader>e :Explore<CR>
 nmap <Leader>w :bp\|bd #<CR>
 nmap <Leader>q <C-W>q<CR>
 nmap <Leader>Q :qa!<CR>
+
+" diff toggle
 nmap <Leader>c :diffthis<CR>
 nmap <Leader>o :diffoff!<CR>
 
+" quich finder
 nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
 nnoremap ,g :call FilteringGetForSource().return()<CR>
