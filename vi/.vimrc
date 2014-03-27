@@ -33,6 +33,8 @@ set t_Co=256
 set encoding=utf-8
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+
+" function to allow comparing buffer with original file
 function! DiffWithFileFromDisk()
     let filename=expand('%')
     let diffname = filename.'.fileFromBuffer'
@@ -43,10 +45,24 @@ function! DiffWithFileFromDisk()
     diffthis
 endfunction
 
-let Tlist_Use_Right_Window   = 1
+
+" function to allow removal of selected buffers in ctrlp
+let g:ctrlp_buffer_func = { 'enter': 'MyCtrlPMappings' }
+func! MyCtrlPMappings()
+    nnoremap <buffer> <silent> <c-@> :call <sid>DeleteBuffer()<cr>
+endfunc
+func! s:DeleteBuffer()
+    let line = getline('.')
+    let bufid = line =~ '\[\d\+\*No Name\]$' ? str2nr(matchstr(line, '\d\+'))
+        \ : fnamemodify(line[2:], ':p')
+    exec "bd" bufid
+    exec "norm \<F5>"
+endfunc
+
+
+let Tlist_Use_Right_Window = 1
 let g:csv_no_conceal = 1
 
-let @t='>>j'
 nmap <Leader>j :CommandTJump<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
