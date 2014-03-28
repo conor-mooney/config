@@ -256,7 +256,8 @@ inoremap <silent> <C-\> <Esc>:call <SID>ToggleMaximize()<Enter>a
 "nnoremap  <silent> <C-Z> :call <SID>ToggleMaximize()<Enter>
 "inoremap <silent> <C-Z> <Esc>:call <SID>ToggleMaximize()<Enter>a
 
-nnoremap  <silent> <C-V> :call <SID>ToggleMaximizeVertically()<Enter>
+" changed <C-V> to <C-E> - cm
+nnoremap  <silent> <C-E> :call <SID>ToggleMaximizeVertically()<Enter>
 nnoremap  <silent> <C-H> :call <SID>ToggleMaximizeHorizontally()<Enter>
 " We will not override Ctrl-V or Ctrl-H in Insert mode; Ctrl-V is too useful,
 " and Ctrl-H might be what some systems see when the user presses Backspace.
