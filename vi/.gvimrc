@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme jellybeans
 
 highlight DiffAdd cterm=none ctermfg=black ctermbg=Green gui=none guifg=black guibg=Green
 highlight DiffDelete cterm=none ctermfg=black ctermbg=Red gui=none guifg=black guibg=Red
@@ -11,7 +11,7 @@ highlight CSVColumnOdd  term=bold ctermbg=5 guifg=LightGreen
 "Linux fonts
 "set guifont=Ubuntu\ Mono\ 11
 "set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
-""set guifont=Liberation\ Mono\ for\ Powerline\ 10
+"set guifont=Liberation\ Mono\ for\ Powerline\ 10
 
 "OS-X Fonts
 "set gfn=Menlo\ Regular:h12

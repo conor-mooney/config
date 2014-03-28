@@ -1,3 +1,4 @@
+colorscheme jellybeans
 syntax enable
 syntax on
 
@@ -63,12 +64,13 @@ endfunc
 let Tlist_Use_Right_Window = 1
 let g:csv_no_conceal = 1
 
-nmap <Leader>j :CommandTJump<CR>
+nmap <Leader>b :CtrlPBuffer<CR>
+"nmap <Leader>j :CommandTJump<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
 nmap <Leader>g :TagbarToggle<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
-nmap <Leader>z :FufFile<CR>
+"nmap <Leader>z :FufFile<CR>
 nmap <Leader>e :Explore<CR>
 nmap <Leader>w :bp\|bd #<CR>
 nmap <Leader>q <C-W>q<CR>
@@ -83,6 +85,7 @@ nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
 nnoremap ,g :call FilteringGetForSource().return()<CR>
 
+" for ctags and coffeescript
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 let showmarks_enable = 0
 
