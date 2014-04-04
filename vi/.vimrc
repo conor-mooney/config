@@ -1,4 +1,7 @@
 colorscheme jellybeans
+"colorscheme lucius
+"LuciusWhite
+
 syntax enable
 syntax on
 
@@ -65,6 +68,7 @@ let Tlist_Use_Right_Window = 1
 let g:csv_no_conceal = 1
 
 nmap <Leader>b :CtrlPBuffer<CR>
+nmap <Leader>z :CtrlPMRU<CR>
 "nmap <Leader>j :CommandTJump<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>f :Ack 
@@ -75,6 +79,7 @@ nmap <Leader>e :Explore<CR>
 nmap <Leader>w :bp\|bd #<CR>
 nmap <Leader>q <C-W>q<CR>
 nmap <Leader>Q :qa!<CR>
+nmap <Leader>t :UndotreeToggle<CR>
 
 " diff toggle
 nmap <Leader>c :diffthis<CR>
