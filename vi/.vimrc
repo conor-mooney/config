@@ -29,8 +29,8 @@ set hlsearch
 set showmatch
 set incsearch
 set autoindent
-set vb
-set nu
+set verbose
+set number
 set nocompatible
 set mouse=a
 set t_Co=256
@@ -51,6 +51,7 @@ endfunction
 
 
 " function to allow removal of selected buffers in ctrlp
+" <C-p> then <C-z> to select and then <C-@> to remove buffer
 let g:ctrlp_buffer_func = { 'enter': 'MyCtrlPMappings' }
 func! MyCtrlPMappings()
     nnoremap <buffer> <silent> <c-@> :call <sid>DeleteBuffer()<cr>
@@ -67,19 +68,22 @@ endfunc
 let Tlist_Use_Right_Window = 1
 let g:csv_no_conceal = 1
 
+" ctrlp
 nmap <Leader>b :CtrlPBuffer<CR>
 nmap <Leader>z :CtrlPMRU<CR>
-"nmap <Leader>j :CommandTJump<CR>
-nmap <Leader>k :call DiffWithFileFromDisk()<CR>
+
+nmap <Leader>e :Explore<CR>
 nmap <Leader>f :Ack 
 nmap <Leader>g :TagbarToggle<CR>
+"nmap <Leader>j :CommandTJump<CR>
+nmap <Leader>j :SrcExplToggle<CR>
+nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
-"nmap <Leader>z :FufFile<CR>
-nmap <Leader>e :Explore<CR>
-nmap <Leader>w :bp\|bd #<CR>
 nmap <Leader>q <C-W>q<CR>
 nmap <Leader>Q :qa!<CR>
 nmap <Leader>t :UndotreeToggle<CR>
+nmap <Leader>w :bp\|bd #<CR>
+"nmap <Leader>z :FufFile<CR>
 
 " diff toggle
 nmap <Leader>c :diffthis<CR>
