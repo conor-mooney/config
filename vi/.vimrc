@@ -29,7 +29,7 @@ set hlsearch
 set showmatch
 set incsearch
 set autoindent
-set verbose
+set vb
 set number
 set nocompatible
 set mouse=a
