@@ -9,9 +9,11 @@ highlight CSVColumnEven term=bold ctermbg=4 guifg=Cyan
 highlight CSVColumnOdd  term=bold ctermbg=5 guifg=LightGreen
 
 "Linux fonts
+"set guifont=Liberation\ Mono\ \Bold\ 10
 "set guifont=Ubuntu\ Mono\ 11
 "set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
 "set guifont=Liberation\ Mono\ for\ Powerline\ 10
+"set guifont=DejaVu\ Sans\ Mono\ Bold\ 9
 
 "OS-X Fonts
 "set gfn=Menlo\ Regular:h12
