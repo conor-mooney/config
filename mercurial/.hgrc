@@ -1,0 +1,25 @@
+[ui]
+username = Conor Mooney <conor.mooney@gmail.com>
+
+[extensions]
+color =
+
+[color]
+status.modified = magenta bold
+status.added = green bold
+status.removed = red bold
+status.deleted = cyan bold
+status.unknown = blue bold
+status.ignored = black bold
+
+[alias]
+ci = commit
+cl = clone
+gf = log --style=/Users/conor/.mercurial/sglog.tmpl
+gr = log --style=/Users/conor/.mercurial/slog.tmpl
+lf = log --style=/Users/conor/.mercurial/dlog.tmpl
+lg = log --style=/Users/conor/.mercurial/nlog.tmpl
+pl = pull
+ps = push
+
+
