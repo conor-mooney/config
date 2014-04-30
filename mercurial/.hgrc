@@ -1,5 +1,17 @@
 [ui]
 username = Conor Mooney <conor.mooney@gmail.com>
+merge = vimdiff
+
+[merge-tools]
+vimdiff.executable = mvim
+vimdiff.args = -d $base $local $output $other +close +close
+
+[extensions]
+hgext.extdiff =
+
+[extdiff]
+cmd.gdiff = mvimdiff
+opts.gdiff = -f
 
 [extensions]
 color =
@@ -15,11 +27,15 @@ status.ignored = black bold
 [alias]
 ci = commit
 cl = clone
+df = diff
+dt = gdiff
 gf = log --style=/Users/conor/.mercurial/sglog.tmpl
 gr = log --style=/Users/conor/.mercurial/slog.tmpl
 lf = log --style=/Users/conor/.mercurial/dlog.tmpl
 lg = log --style=/Users/conor/.mercurial/nlog.tmpl
+mg = merge
 pl = pull
 ps = push
-
+st = status
+up = update
 
