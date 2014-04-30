@@ -11,8 +11,8 @@ vimdiff.args = -d $base $local $output $other +close +close
 hgext.extdiff =
 
 [extdiff]
-cmd.gdiff = mvimdiff
-opts.gdiff = -f
+cmd.vimdiff = mvim
+opts.vimdiff = -f '+next' '+execute "DirDiff" fnameescape(argv(0)) fnameescape(argv(1))'
 
 [extensions]
 color =
@@ -28,8 +28,8 @@ status.ignored = black bold
 [alias]
 ci = commit
 cl = clone
-df = diff
-dt = gdiff
+df = diff --git
+dt = vimdiff
 gf = log --style=/Users/conor/.mercurial/sglog.tmpl
 gr = log --style=/Users/conor/.mercurial/slog.tmpl
 lf = log --style=/Users/conor/.mercurial/dlog.tmpl
@@ -37,6 +37,8 @@ lg = log --style=/Users/conor/.mercurial/nlog.tmpl
 mg = merge
 pl = pull
 ps = push
+rs = resolve
 st = status
+sw = show
 up = update
 
