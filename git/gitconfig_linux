@@ -1,9 +1,9 @@
 [user]
 	name = Conor Mooney
-	email = cmooney@groupon.com
+	email = conor.mooney@gmail.com
 [core]
 	editor = vi
-	excludesfile = /Users/cmooney/.gitignore_global
+	excludesfile = /Users/conor/.gitignore_global
 [alias]
     bl = blame
     br = branch
