@@ -94,6 +94,12 @@ nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
 nnoremap ,g :call FilteringGetForSource().return()<CR>
 
+" Linux clipboard shortcuts - note that <CMD>ACVX work in MacVim by default
+"noremap <A-a> GVgg
+"noremap <A-c> "+y
+"noremap <A-v> "+p
+"noremap <A-x> "+x
+
 " for ctags and coffeescript
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 let showmarks_enable = 0
