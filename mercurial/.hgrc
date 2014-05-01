@@ -4,14 +4,20 @@ merge = vimdiff
 editor = vi
 
 [merge-tools]
+# OSX
 vimdiff.executable = mvim
+# Linux
+#vimdiff.executable = gvim
 vimdiff.args = -d $base $local $output $other +close +close
 
 [extensions]
 hgext.extdiff =
 
 [extdiff]
+# OSX
 cmd.vimdiff = mvim
+# Linux
+#cmd.vimdiff = gvim
 opts.vimdiff = -f '+next' '+execute "DirDiff" fnameescape(argv(0)) fnameescape(argv(1))'
 
 [extensions]
