@@ -20,6 +20,9 @@ cmd.vimdiff = mvim
 #cmd.vimdiff = gvim
 opts.vimdiff = -f '+next' '+execute "DirDiff" fnameescape(argv(0)) fnameescape(argv(1))'
 
+# Linux
+#cmd.meld =
+
 [extensions]
 color =
 
