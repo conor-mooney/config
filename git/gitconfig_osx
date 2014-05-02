@@ -38,9 +38,12 @@
 [diff]
 	tool = default-difftool
 [difftool "default-difftool"]
-    cmd = mvim -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
+    cmd = mvim -c 'cd ~' -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
 [difftool]
 	prompt = false
 [remote "origin"]
     push = refs/heads/*:refs/heads/*
     push = refs/tags/*:refs/tags/*
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f

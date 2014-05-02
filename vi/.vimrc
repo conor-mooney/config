@@ -110,5 +110,6 @@ call pathogen#infect()
 
 filetype plugin indent on
 
-" the following 'cd' is need for dirdiff to work properly with both mercurial and git
-cd .
+" the following 'cd' is commented out in order for dirdiff to work properly with both mercurial and git
+" needs -c 'cd ~' applied to difftool in gitconfig
+"cd ~/projects
