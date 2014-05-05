@@ -1,0 +1,51 @@
+[global_config]
+  title_hide_sizetext = True
+[keybindings]
+  close_window = <Super>w
+  group_tab = <Super>g
+  group_all = <Alt><Super>g
+  toggle_zoom = <Super>Return
+  scaled_zoom = <Super>z
+  zoom_in = <Super>equal
+  split_vert = <Super>d
+  full_screen = <Shift><Super>Return
+  prev_tab = <Super>Left
+  switch_to_tab_6 = <Super>6
+  switch_to_tab_7 = <Super>7
+  switch_to_tab_4 = <Super>4
+  switch_to_tab_5 = <Super>5
+  switch_to_tab_2 = <Super>2
+  ungroup_all = <Shift><Alt><Super>g
+  switch_to_tab_1 = <Super>1
+  ungroup_tab = <Shift><Super>g
+  switch_to_tab_8 = <Super>8
+  switch_to_tab_3 = <Super>3
+  zoom_out = <Super>minus
+  close_term = <Super>Escape
+  new_tab = <Super>t
+  copy = <Super>c
+  paste = <Super>v
+  search = <Super>f
+  next_tab = <Super>Right
+  split_horiz = <Shift><Super>d
+  zoom_normal = <Super>0
+  switch_to_tab_9 = <Super>9
+[profiles]
+  [[default]]
+    palette = "#2e3436:#f0707c:#4e9a06:#c4a000:#3c87e9:#b968c6:#06989a:#d3d7cf:#555753:#eb6b6b:#8ae234:#fce94f:#1084d1:#eb7ade:#34e2e2:#eeeeec"
+    font = DejaVu Sans Mono 9
+    background_darkness = 0.78
+    use_system_font = False
+    foreground_color = "#ffffff"
+    copy_on_selection = True
+    background_color = "#2e2e2e"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
