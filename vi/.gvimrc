@@ -1,11 +1,3 @@
-" overide diff colours for any selected colour scheme
-highlight DiffAdd cterm=none ctermfg=black ctermbg=Green gui=none guifg=black guibg=Green
-highlight DiffDelete cterm=none ctermfg=black ctermbg=Red gui=none guifg=black guibg=Red
-highlight DiffChange cterm=none ctermfg=black ctermbg=Yellow gui=none guifg=black guibg=Yellow
-highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black guibg=Cyan
-
-highlight CSVColumnEven term=bold ctermbg=4 guifg=Cyan
-highlight CSVColumnOdd  term=bold ctermbg=5 guifg=LightGreen
 
 "Linux fonts - uncomment one
 "set guifont=Liberation\ Mono\ \Bold\ 10
@@ -16,9 +8,9 @@ highlight CSVColumnOdd  term=bold ctermbg=5 guifg=LightGreen
 
 "OS-X Fonts - uncomment one
 "set gfn=Menlo\ Regular:h12
-"set gfn=Liberation\ Mono\ for\ Powerline:h11
-"set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h11
-"set gfn=Droid\ Sans\ Mono\ for\ Powerline:h11
+"set gfn=Liberation\ Mono\ for\ Powerline:h12
+"set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h12
+"set gfn=Droid\ Sans\ Mono\ for\ Powerline:h12
 
 if &diff
     autocmd vimenter * TagbarClose

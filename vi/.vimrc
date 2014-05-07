@@ -5,11 +5,13 @@ colorscheme jellybeans
 syntax enable
 syntax on
 
+" override diff colours for any selected colour scheme
 highlight DiffAdd cterm=none ctermfg=black ctermbg=Green gui=none guifg=black guibg=Green
 highlight DiffDelete cterm=none ctermfg=black ctermbg=Red gui=none guifg=black guibg=Red
 highlight DiffChange cterm=none ctermfg=black ctermbg=Yellow gui=none guifg=black guibg=Yellow
 highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black guibg=Cyan
 
+" override csv colours for any selected colour scheme
 highlight CSVColumnEven term=bold ctermfg=DarkYellow guifg=DarkYellow
 highlight CSVColumnOdd  term=bold ctermfg=DarkCyan guifg=DarkCyan
 
