@@ -42,81 +42,98 @@ Vim plugins and configurations that I find useful.
 Plugins and configurations are applicable to both text and graphic (`gvim` on Linux and `macvim` on OS-X) versions of VI. All plugin help files should automatically appear in VI help.
 
     .vim
-    ├── autoload
-    ├── available_plugins
-    │   ├── L9
-    │   ├── ack
-    │   ├── command-t
-    │   ├── csv.vim
-    │   ├── ctrlp.vim
-    │   ├── delmitmate
-    │   ├── dirdiff
-    │   ├── emmet-vim
-    │   ├── fugitive
-    │   ├── fuzzy-finder
-    │   ├── hexman
-    │   ├── nerdcommenter
-    │   ├── nerdtree
-    │   ├── quich-filter
-    │   ├── showmarks
-    │   ├── snipmate
-    │   ├── snipmate-nodejs
-    │   ├── source-explorer
-    │   ├── supertab
-    │   ├── syntastic
-    │   ├── tagbar
-    │   ├── taglist
-    │   ├── toggle_maximize
-    │   ├── undotree
-    │   ├── vim-airline
-    │   ├── vim-autoformat
-    │   ├── vim-coffee-script
-    │   ├── vim-jade
-    │   ├── vim-javascript-syntax
-    │   ├── vim-mustache-handlebars
-    │   ├── vim-node
-    │   ├── vim-nodejs-complete
-    │   ├── vim-powerline
-    │   ├── vim-signify
-    │   ├── vim-surround
-    │   ├── vim-unimpaired
-    │   └── yaml
-    ├── bundle
-    │   ├── L9 -> ../available_plugins/L9
-    │   ├── ack -> ../available_plugins/ack
-    │   ├── csv.vim -> ../available_plugins/csv.vim
-    │   ├── ctrlp.vim -> ../available_plugins/ctrlp.vim
-    │   ├── delmitmate -> ../available_plugins/delmitmate
-    │   ├── dirdiff -> ../available_plugins/dirdiff
-    │   ├── emmet-vim -> ../available_plugins/emmet-vim
-    │   ├── fugitive -> ../available_plugins/fugitive
-    │   ├── hexman -> ../available_plugins/hexman
-    │   ├── nerdcommenter -> ../available_plugins/nerdcommenter
-    │   ├── nerdtree -> ../available_plugins/nerdtree
-    │   ├── quich-filter -> ../available_plugins/quich-filter
-    │   ├── showmarks -> ../available_plugins/showmarks
-    │   ├── snipmate -> ../available_plugins/snipmate
-    │   ├── snipmate-nodejs -> ../available_plugins/snipmate-nodejs
-    │   ├── source-explorer -> ../available_plugins/source-explorer
-    │   ├── supertab -> ../available_plugins/supertab
-    │   ├── syntastic -> ../available_plugins/syntastic
-    │   ├── tagbar -> ../available_plugins/tagbar
-    │   ├── toggle_maximize -> ../available_plugins/toggle_maximize
-    │   ├── undotree -> ../available_plugins/undotree
-    │   ├── vim-airline -> ../available_plugins/vim-airline
-    │   ├── vim-autoformat -> ../available_plugins/vim-autoformat
-    │   ├── vim-coffee-script -> ../available_plugins/vim-coffee-script
-    │   ├── vim-jade -> ../available_plugins/vim-jade
-    │   ├── vim-javascript-syntax -> ../available_plugins/vim-javascript-syntax
-    │   ├── vim-mustache-handlebars -> ../available_plugins/vim-mustache-handlebars
-    │   ├── vim-nodejs-complete -> ../available_plugins/vim-nodejs-complete
-    │   ├── vim-powerline -> ../available_plugins/vim-powerline
-    │   ├── vim-signify -> ../available_plugins/vim-signify
-    │   ├── vim-surround -> ../available_plugins/vim-surround
-    │   ├── vim-unimpaired -> ../available_plugins/vim-unimpaired
-    │   └── yaml -> ../available_plugins/yaml
-    └── colors
-
+    +-- autoload
+    |   +-- pathogen.vim
+    +-- available_plugins
+    |   +-- L9
+    |   +-- ack
+    |   +-- command-t
+    |   +-- csv.vim
+    |   +-- ctrlp.vim
+    |   +-- delmitmate
+    |   +-- dirdiff
+    |   +-- emmet-vim
+    |   +-- fugitive
+    |   +-- fuzzy-finder
+    |   +-- hexman
+    |   +-- nerdcommenter
+    |   +-- nerdtree
+    |   +-- quich-filter
+    |   +-- showmarks
+    |   +-- snipmate
+    |   +-- snipmate-nodejs
+    |   +-- source-explorer
+    |   +-- supertab
+    |   +-- syntastic
+    |   +-- tagbar
+    |   +-- taglist
+    |   +-- toggle_maximize
+    |   +-- undotree
+    |   +-- vim-airline
+    |   +-- vim-autoformat
+    |   +-- vim-coffee-script
+    |   +-- vim-colors-solarized
+    |   +-- vim-jade
+    |   +-- vim-javascript-syntax
+    |   +-- vim-json
+    |   +-- vim-lawrencium
+    |   +-- vim-mercenary
+    |   +-- vim-mustache-handlebars
+    |   +-- vim-node
+    |   +-- vim-nodejs-complete
+    |   +-- vim-powerline
+    |   +-- vim-rails
+    |   +-- vim-ruby
+    |   +-- vim-signify
+    |   +-- vim-surround
+    |   +-- vim-unimpaired
+    |   +-- yaml
+    +-- bundle
+    |   +-- L9 -> ../available_plugins/L9
+    |   +-- ack -> ../available_plugins/ack
+    |   +-- csv.vim -> ../available_plugins/csv.vim
+    |   +-- ctrlp.vim -> ../available_plugins/ctrlp.vim
+    |   +-- delmitmate -> ../available_plugins/delmitmate
+    |   +-- dirdiff -> ../available_plugins/dirdiff
+    |   +-- emmet-vim -> ../available_plugins/emmet-vim
+    |   +-- fugitive -> ../available_plugins/fugitive
+    |   +-- hexman -> ../available_plugins/hexman
+    |   +-- nerdcommenter -> ../available_plugins/nerdcommenter
+    |   +-- nerdtree -> ../available_plugins/nerdtree
+    |   +-- quich-filter -> ../available_plugins/quich-filter
+    |   +-- showmarks -> ../available_plugins/showmarks
+    |   +-- snipmate -> ../available_plugins/snipmate
+    |   +-- snipmate-nodejs -> ../available_plugins/snipmate-nodejs
+    |   +-- source-explorer -> ../available_plugins/source-explorer
+    |   +-- supertab -> ../available_plugins/supertab
+    |   +-- syntastic -> ../available_plugins/syntastic
+    |   +-- tagbar -> ../available_plugins/tagbar
+    |   +-- toggle_maximize -> ../available_plugins/toggle_maximize
+    |   +-- undotree -> ../available_plugins/undotree
+    |   +-- vim-airline -> ../available_plugins/vim-airline
+    |   +-- vim-autoformat -> ../available_plugins/vim-autoformat
+    |   +-- vim-coffee-script -> ../available_plugins/vim-coffee-script
+    |   +-- vim-colors-solarized -> ../available_plugins/vim-colors-solarized
+    |   +-- vim-jade -> ../available_plugins/vim-jade
+    |   +-- vim-javascript-syntax -> ../available_plugins/vim-javascript-syntax
+    |   +-- vim-json -> ../available_plugins/vim-json
+    |   +-- vim-lawrencium -> ../available_plugins/vim-lawrencium
+    |   +-- vim-mustache-handlebars -> ../available_plugins/vim-mustache-handlebars
+    |   +-- vim-nodejs-complete -> ../available_plugins/vim-nodejs-complete
+    |   +-- vim-powerline -> ../available_plugins/vim-powerline
+    |   +-- vim-rails -> ../available_plugins/vim-rails
+    |   +-- vim-ruby -> ../available_plugins/vim-ruby
+    |   +-- vim-signify -> ../available_plugins/vim-signify
+    |   +-- vim-surround -> ../available_plugins/vim-surround
+    |   +-- vim-unimpaired -> ../available_plugins/vim-unimpaired
+    |   +-- yaml -> ../available_plugins/yaml
+    +-- colors
+    |   +-- desert2.vim
+    |   +-- grb256.vim
+    |   +-- jellybeans.vim
+    |   +-- lucius.vim
+    |   +-- vividchalk.vim
+    +-- filetype.vim
 
 *Pathogen* is used to manage the VI plugins.  Most plugins will run by simply putting them in the `bundle` folder but some plugins require some extra work to get them up and running. To make it easy to enable / disable individual plugins, I put my plgins into a folder called `available_plugins` and create a symbolic link to them from the `bundle` folder.
 
