@@ -31,13 +31,17 @@ linux
 -----
 Scripts and configurations that are specific to Linux.
 
+mercurial
+---------
+Configuration file and mercurial templates.  Template files should go into `$HOME/.mercurial`
+
 osx
 ---
 Scripts and configuration that are specific to Apple OS-X
 
 vi
 --
-Vim plugins and configurations that I find useful.
+Vim plugins and configurations that I find useful. Note that there are lines in `.vimrc` and `.gvimrc` that are specific to either OS-X or Linux that should be uncommented depending on which platform you are using.
 
 Plugins and configurations are applicable to both text and graphic (`gvim` on Linux and `macvim` on OS-X) versions of VI. All plugin help files should automatically appear in VI help.
 
@@ -142,6 +146,7 @@ Plugins and configurations are applicable to both text and graphic (`gvim` on Li
 * This ack pluging requires you to have already installed the ack recurisive grep utility.  The plugin just glues `ack` and `vi` together.
 
 **command-t**
+*Note ctrlp is better (imho) than either command-t or fuzzy-finder*
 
 * This requires ruby to install and run.
 
@@ -151,6 +156,7 @@ Plugins and configurations are applicable to both text and graphic (`gvim` on Li
 4. From `commandt/ruby/commandt` run `$ make`
 
 **tagbar / taglist**
+*(imho) tagbar is better than taglist*
 
 * Requires the brew version of ctags to run on OS-X - `$ brew install ctags`
 * Need to add sample `.ctags` file in `ctags` folder to work with Coffeescript
