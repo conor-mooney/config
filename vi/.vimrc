@@ -23,7 +23,7 @@ set laststatus=2
 set background=dark
 set wrap
 set tabstop=4
-set expandtab
+"set expandtab
 set shiftwidth=4
 set ignorecase
 set smartcase
@@ -68,7 +68,7 @@ endfunc
 
 
 let Tlist_Use_Right_Window = 1
-let g:csv_no_conceal = 1
+"let g:csv_no_conceal = 1
 
 " ctrlp
 nmap <Leader>b :CtrlPBuffer<CR>
