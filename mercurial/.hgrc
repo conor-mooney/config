@@ -40,7 +40,7 @@ cl = clone
 df = diff --git
 dt = vimdiff
 gf = log --style=/Users/conor/.mercurial/sglog.tmpl
-gr = log --style=/Users/conor/.mercurial/slog.tmpl
+gr = glog
 lf = log --style=/Users/conor/.mercurial/nlog.tmpl
 lg = log --style=/Users/conor/.mercurial/dlog.tmpl
 mg = merge
@@ -50,4 +50,5 @@ rs = resolve
 st = status
 sw = show
 up = update
+url = paths
 
