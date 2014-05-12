@@ -41,8 +41,8 @@ df = diff --git
 dt = vimdiff
 gf = log --style=/Users/conor/.mercurial/sglog.tmpl
 gr = log --style=/Users/conor/.mercurial/slog.tmpl
-lf = log --style=/Users/conor/.mercurial/dlog.tmpl
-lg = log --style=/Users/conor/.mercurial/nlog.tmpl
+lf = log --style=/Users/conor/.mercurial/nlog.tmpl
+lg = log --style=/Users/conor/.mercurial/dlog.tmpl
 mg = merge
 pl = pull
 ps = push
