@@ -45,6 +45,8 @@ Vim plugins and configurations that I find useful. Note that there are lines in 
 
 Plugins and configurations are applicable to both text and graphic (`gvim` on Linux and `macvim` on OS-X) versions of VI. All plugin help files should automatically appear in VI help.
 
+Run the `link_plugin` script from the `bundle` folder to link in the default (useful) set of available vi plugins.
+
     .vim
     +-- autoload
     |   +-- pathogen.vim
