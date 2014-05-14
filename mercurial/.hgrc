@@ -41,16 +41,19 @@ ci = commit
 cl = clone
 df = diff --git
 dt = vimdiff
-gf = log --style=/Users/conor/.mercurial/sglog.tmpl
-gr = glog
-lf = log --style=/Users/conor/.mercurial/nlog.tmpl
-lg = log --style=/Users/conor/.mercurial/dlog.tmpl
+gf = glog --style=/Users/conor/.mercurial/gf.tmpl
+gr = glog --style=/Users/conor/.mercurial/gr.tmpl
+hd = heads
+lf = log --style=/Users/conor/.mercurial/lf.tmpl
+lg = log --style=/Users/conor/.mercurial/lg.tmpl
 mg = merge
 pl = pull
 ps = push
+pt = parents
 rs = resolve
 st = status
 sw = show
+tp = tip
 up = update
 url = paths
 
