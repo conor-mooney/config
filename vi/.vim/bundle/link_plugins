@@ -5,5 +5,6 @@
 for p in L9 ack csv.vim ctrlp.vim delmitmate dirdiff emmet-vim fugitive hexman html_autoclose nerdcommenter nerdtree quich-filter showmarks snipmate snipmate-nodejs source-explorer supertab syntastic tagbar toggle_maximize undotree vim-airline vim-autoformat vim-closetag vim-coffee-script vim-colors-solarized vim-jade vim-javascript-syntax vim-json vim-lawrencium vim-mustache-handlebars vim-nodejs-complete vim-powerline vim-rails vim-ruby vim-signify vim-surround vim-unimpaired yaml
 do
 	echo "Activating plugin --> $p"
+	ln -nfs ../available_plugins/$p .
 done
 
