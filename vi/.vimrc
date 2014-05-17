@@ -2,19 +2,13 @@ colorscheme jellybeans
 "colorscheme lucius
 "LuciusWhite
 
-syntax enable
-syntax on
-
 " override diff colours for any selected colour scheme
 highlight DiffAdd cterm=none ctermfg=black ctermbg=Green gui=none guifg=black guibg=Green
 highlight DiffDelete cterm=none ctermfg=black ctermbg=Red gui=none guifg=black guibg=Red
 highlight DiffChange cterm=none ctermfg=black ctermbg=Yellow gui=none guifg=black guibg=Yellow
 highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black guibg=Cyan
 
-" override csv colours for any selected colour scheme
-highlight CSVColumnEven term=bold ctermfg=DarkYellow guifg=DarkYellow
-highlight CSVColumnOdd  term=bold ctermfg=DarkCyan guifg=DarkCyan
-
+"powerline fonts
 let airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 
@@ -117,3 +111,6 @@ let g:closetag_html_style=1
 " the following 'cd' is commented out in order for dirdiff to work properly with both mercurial and git
 " needs -c 'cd ~' applied to difftool in gitconfig
 "cd ~/projects
+
+syntax enable
+syntax on
