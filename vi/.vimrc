@@ -34,6 +34,10 @@ set encoding=utf-8
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
+" supertab
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
+
+
 " function to allow comparing buffer with original file
 function! DiffWithFileFromDisk()
     let filename=expand('%')
