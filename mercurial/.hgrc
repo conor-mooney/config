@@ -51,6 +51,7 @@ pl = pull
 ps = push
 pt = parents
 rs = resolve
+rt = revert
 st = status
 sw = show
 tp = tip
