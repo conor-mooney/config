@@ -44,6 +44,7 @@ dt = vimdiff
 gf = glog --style=/Users/conor/.mercurial/gf.tmpl
 gr = glog --style=/Users/conor/.mercurial/gr.tmpl
 hd = heads
+lc = log --style=/Users/conor/.mercurial/lg.tmpl --limit 1
 lf = log --style=/Users/conor/.mercurial/lf.tmpl
 lg = log --style=/Users/conor/.mercurial/lg.tmpl
 mg = merge
