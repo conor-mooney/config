@@ -44,12 +44,12 @@ dt = vimdiff
 gf = glog --style=/Users/conor/.mercurial/gf.tmpl
 gr = glog --style=/Users/conor/.mercurial/gr.tmpl
 hd = heads
-ic = incoming
+ic = incoming --style=/Users/conor/.mercurial/lf.tmpl
 lc = log --style=/Users/conor/.mercurial/lg.tmpl --limit 1
 lf = log --style=/Users/conor/.mercurial/lf.tmpl
 lg = log --style=/Users/conor/.mercurial/lg.tmpl
 mg = merge
-og = outgoing
+og = outgoing --style=/Users/conor/.mercurial/lf.tmpl
 pl = pull
 ps = push
 pt = parents
