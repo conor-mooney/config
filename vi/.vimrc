@@ -31,7 +31,6 @@ set nocompatible
 set mouse=a
 set t_Co=256
 set encoding=utf-8
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 " supertab
@@ -52,6 +51,8 @@ endfunction
 
 " function to allow removal of selected buffers in ctrlp
 " <C-p> then <C-z> to select and then <C-@> to remove buffer
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:100'
 let g:ctrlp_buffer_func = { 'enter': 'MyCtrlPMappings' }
 func! MyCtrlPMappings()
     nnoremap <buffer> <silent> <c-@> :call <sid>DeleteBuffer()<cr>
