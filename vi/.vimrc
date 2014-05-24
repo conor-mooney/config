@@ -65,6 +65,12 @@ func! s:DeleteBuffer()
     exec "norm \<F5>"
 endfunc
 
+let g:ctrlp_mruf_exclude = '/tmp/.*\|/temp/.*'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|(/tmp/)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+
 
 let Tlist_Use_Right_Window = 1
 "let g:csv_no_conceal = 1
