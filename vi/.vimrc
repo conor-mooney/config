@@ -65,11 +65,20 @@ func! s:DeleteBuffer()
     exec "norm \<F5>"
 endfunc
 
-let g:ctrlp_mruf_exclude = '/tmp/.*\|/temp/.*'
+let g:ctrlp_mruf_exclude = '/tmp/.*\|/temp/.*|/var/.*'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)|(/tmp/)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+
+
+" srcexpl
+nmap <Leader>j :SrcExplToggle<CR>
+let g:SrcExpl_jumpKey = "<ENTER>"
+let g:SrcExpl_pluginList = [
+         \ "__Tag_Bar__",
+         \ "_NERD_tree_"
+	\ ] 
 
 
 let Tlist_Use_Right_Window = 1
@@ -83,7 +92,6 @@ nmap <Leader>e :Explore<CR>
 nmap <Leader>f :Ack 
 nmap <Leader>g :TagbarToggle<CR>
 "nmap <Leader>j :CommandTJump<CR>
-nmap <Leader>j :SrcExplToggle<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>q <C-W>q<CR>
@@ -110,6 +118,9 @@ nnoremap ,g :call FilteringGetForSource().return()<CR>
 " for ctags and coffeescript
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 let showmarks_enable = 0
+
+" dirdiff
+let g:DirDiffExcludes = ".git,.hg,CVS,*.class,*.exe,.*.swp"
 
 call pathogen#incubate()
 call pathogen#helptags()
