@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# utility to recursively execute specified mercurial command
+# goes down two levels of folder looking for mercurial repos
+
+for od in *
+do
+	if [ -d $od ] ; then
+		cd $od > /dev/null
+		if [ -d .hg ] ; then
+			echo "==> $od"
+			hg $1 $2 $3 $4 $5 $6 $7 $8 $9
+		else
+			for id in *
+			do
+				if [ -d $id ] ; then
+					cd $id > /dev/null
+					if [ -d .hg ] ; then
+						echo "==> $od/$id"
+						hg $1 $2 $3 $4 $5 $6 $7 $8 $9
+					fi
+					cd .. > /dev/null
+				fi
+			done
+		fi
+		cd .. > /dev/null
+	fi
+done
+
