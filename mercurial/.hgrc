@@ -11,9 +11,17 @@ vimdiff.executable = mvim
 vimdiff.args = -d $base $local $output $other +close +close
 
 [extensions]
-hgext.extdiff =
+color=
 graphlog=
+hgext.extdiff=
 hgk=
+pager=
+record=
+shelve=
+
+[pager]
+pager = LESS='FSRX' less
+ignore = version, help, update, serve, record
 
 [extdiff]
 # OSX
@@ -23,10 +31,7 @@ cmd.vimdiff = mvim
 opts.vimdiff = -f '+next' '+execute "DirDiff" fnameescape(argv(0)) fnameescape(argv(1))'
 
 # Linux
-#cmd.meld =
-
-[extensions]
-color =
+cmd.meld =
 
 [color]
 status.modified = magenta bold
@@ -37,6 +42,8 @@ status.unknown = blue bold
 status.ignored = black bold
 
 [alias]
+bl = annotate -luc
+br = branch
 ci = commit
 cl = clone
 df = diff --git
@@ -55,8 +62,11 @@ ps = push
 pt = parents
 rs = resolve
 rt = revert
+sa = shelve
+sr = serve -d
 st = status
 sw = show
+tg = tag
 tp = tip
 up = update
 url = paths

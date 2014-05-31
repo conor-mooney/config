@@ -24,8 +24,10 @@
     pl = pull
     ps = push
     rl = rev-list --all
+	sa = stash
     st = status
     sw = show
+	tg = tag
     url = config --get remote.origin.url
 [mergetool "mvimdiff"]
     cmd = mvim -d -f $MERGED $LOCAL $BASE $REMOTE
@@ -47,3 +49,9 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

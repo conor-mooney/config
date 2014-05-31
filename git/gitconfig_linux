@@ -24,8 +24,10 @@
     pl = pull
     ps = push
     rl = rev-list --all
+	sa = stash
     st = status
     sw = show
+	tg = tag
     url = config --get remote.origin.url
 [mergetool "gvimdiff"]
     cmd = gvim -d -f $MERGED $LOCAL $BASE $REMOTE
