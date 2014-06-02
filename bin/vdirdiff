@@ -1,2 +1,2 @@
 #/usr/bin/env bash
-mvim -c ":DirDiff `pwd`/$1/ `pwd`/$2/ "
+mvim -c ":DirDiff $1 $2 "
