@@ -2,3 +2,4 @@
 --color-match=bold yellow on_red
 --type-set=django=.py,.css,.html
 --type-set=json=.json
+--follow
