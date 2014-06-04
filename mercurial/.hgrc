@@ -44,6 +44,7 @@ status.ignored = black bold
 [alias]
 bl = annotate -luc
 br = branch
+bs = branches
 ci = commit
 cl = clone
 df = diff --git
