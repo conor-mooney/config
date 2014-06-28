@@ -2,6 +2,7 @@
 username = Conor Mooney <conor.mooney@gmail.com>
 merge = vimdiff
 editor = vi
+ignore=~/.hgignore_global
 
 [merge-tools]
 # OSX
