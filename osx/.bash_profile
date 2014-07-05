@@ -37,8 +37,13 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 #source .profile
 
+# RVM OR RBENV - NOT BOTH!
 # RVM - Ruby Version Manager
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# RBENV - Ruby Version Manager
+#export PATH=$HOME/.rbenv/bin:$PATH
+#eval "$(rbenv init -)"
 
 # NVM - Node Version Manager
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
