@@ -16,6 +16,7 @@ color=
 graphlog=
 hgext.extdiff=
 hgk=
+mq=
 pager=
 record=
 shelve=
