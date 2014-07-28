@@ -68,7 +68,7 @@ endfunc
 let g:ctrlp_mruf_exclude = '/tmp/.*\|/temp/.*|/var/.*'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)|(/tmp/)$',
-  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'file': '\v\.(exe|so|dll|orig)$',
   \ }
 
 
