@@ -1,4 +1,4 @@
-colorscheme jellybeans
+colorscheme jellybeans2
 "colorscheme lucius
 "LuciusWhite
 
@@ -100,10 +100,6 @@ nmap <Leader>t :UndotreeToggle<CR>
 nmap <Leader>w :bp\|bd #<CR>
 "nmap <Leader>z :FufFile<CR>
 
-" diff toggle
-nmap <Leader>c :diffthis<CR>
-nmap <Leader>o :diffoff!<CR>
-
 " quich finder
 nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
@@ -119,8 +115,24 @@ nnoremap ,g :call FilteringGetForSource().return()<CR>
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 let showmarks_enable = 0
 
+" diff toggle
+nmap <Leader>c :diffthis<CR>
+nmap <Leader>o :diffoff!<CR>
+
+" diff
+if &diff
+	set diffopt += "iwhite"
+endif
+
 " dirdiff
-let g:DirDiffExcludes = ".git,.hg,CVS,*.class,*.exe,.*.swp"
+let g:DirDiffExcludes = ".git,.hg,CVS,*.class,*.exe,.*.swp,*.orig"
+let g:DirDiffIgnore = "Id:,Revision:,Date:"
+let g:DirDiffAddArgs = "-w"
+
+set diffexpr=MyDiff()
+function MyDiff()
+	silent execute "!diff -a --binary " . g:DirDiffAddArgs . " " . v:fname_in . " " . v:fname_new .  " > " . v:fname_out
+endfunction
 
 call pathogen#incubate()
 call pathogen#helptags()
