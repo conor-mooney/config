@@ -48,3 +48,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 # NVM - Node Version Manager
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
+#powerline
+#. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh

@@ -63,3 +63,5 @@ source ~/.zsh/git-prompt/zshrc.sh
 PROMPT='%{$fg[green]%}%B%m:%{$fg[yellow]%}%1~%b%# '
 RPROMPT='$(git_super_status)'
 
+# powerline
+#. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
