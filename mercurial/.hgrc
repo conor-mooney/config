@@ -44,6 +44,7 @@ status.unknown = blue bold
 status.ignored = black bold
 
 [alias]
+ac = log --style=/home/conor/.mercurial/lg.tmpl -r "reverse(ancestors(.))"
 bl = annotate -luc
 br = branch
 bs = branches
