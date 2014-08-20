@@ -8,8 +8,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-source .bashrc
-source .bash_aliases
 export EDITOR=/usr/bin/vi
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
@@ -48,5 +46,11 @@ source /usr/local/bin/virtualenvwrapper.sh
 # NVM - Node Version Manager
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
+<<<<<<< HEAD
+source .bashrc
+source .bash_aliases
+
+=======
 #powerline
 #. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+>>>>>>> 1b545b5baf46f54e7f50c07d41e254a7a5c78a41
