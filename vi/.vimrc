@@ -1,4 +1,11 @@
-colorscheme jellybeans2
+" colourschemes I like ...
+colorscheme jellybeans
+"colorscheme desert2
+"colorscheme kib_darktango
+"colorscheme norwaytoday
+"colorscheme pleasant
+"colorscheme pacific
+"colorscheme perfect
 "colorscheme lucius
 "LuciusWhite
 
@@ -13,6 +20,7 @@ let airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 
 set nocompatible
+set cursorline
 set laststatus=2
 set background=dark
 set wrap
