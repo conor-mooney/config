@@ -1,0 +1,9 @@
+ Mrxvt.macro.F1:     Str cd ~\n
+ Mrxvt.macro.F2:     Str cd dev\n
+ Mrxvt.macro.F3:     Str cit\n
+ Mrxvt.macro.F4:     Str cd ~/My\ Documents\n
+
+ Mrxvt.macro.F5:     Str cd ..\n
+ Mrxvt.macro.F6:     Str history\n
+ Mrxvt.macro.F7:     Str history\n
+ Mrxvt.macro.F8:     Str history\n

@@ -1,0 +1,29 @@
+# XTerm*Font: 9x15
+XTerm*Font: 7x13
+XTerm*scrollBar: on
+XTerm*geometry: 80x50
+XTerm*cursorColor: gold
+
+# white background
+#XTerm*highlightColor: yellow
+#XTerm*background: rgb:ff/ff/df
+#XTerm*foreground: white
+
+# black background
+XTerm*background: black
+#XTerm*background: #444444
+XTerm*foreground: white
+#XTerm*highlightColor: skyblue
+
+##############
+#  mrxvt
+##############
+mrxvt*font:                  7x13
+mrxvt*foreground:            white
+mrxvt*background:            black
+mrxvt*scrollbarStyle:        rxvt
+
+# These keys are used by emacs, disable them
+mrxvt*hotkey*Dummy:          Ctrl+Shift+underscore
+mrxvt*hotkey*Dummy:          Ctrl+Shift+plus
+
