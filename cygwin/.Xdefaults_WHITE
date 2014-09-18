@@ -1,0 +1,14 @@
+XTerm*Font: 9x15
+XTerm*scrollBar: on
+XTerm*geometry: 80x50
+XTerm*cursorColor: gold
+
+# white background
+XTerm*highlightColor: yellow
+XTerm*background: rgb:ff/ff/df
+XTerm*foreground: white
+
+# black background
+#XTerm*background: black
+#XTerm*foreground: white
+#XTerm*highlightColor: skyblue

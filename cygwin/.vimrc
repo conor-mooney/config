@@ -1,0 +1,11 @@
+syntax enable
+syntax on
+set tabstop=4
+set shiftwidth=4
+set ignorecase
+set smartcase
+set hlsearch
+set showmatch
+set incsearch
+set autoindent
+set vb
