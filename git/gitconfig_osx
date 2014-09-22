@@ -1,16 +1,16 @@
 [user]
-	name = Conor Mooney
-	email = conor.mooney@gmail.com
+    name = Conor Mooney
+    email = conor.mooney@gmail.com
 [core]
-	editor = vi
-	excludesfile = /Users/conor/.gitignore_global
+    editor = vi
+    excludesfile = /Users/conor/.gitignore_global
 [alias]
     bl = blame
     br = branch
     bs = branch -a
     ci = commit
     cl = clone
-	cn = clean
+    cn = clean
     co = checkout
     dc = difftool --dir-diff --cached
     df = diff
@@ -26,36 +26,36 @@
     pl = pull
     ps = push
     rl = rev-list --all
-	rs = reset
-	sa = stash
-	sm = submodule
+    rs = reset
+    sa = stash
+    sm = submodule
     st = status
     sw = show
-	tg = tag
+    tg = tag
     url = config --get remote.origin.url
 [mergetool "mvimdiff"]
     cmd = mvim -d -f $MERGED $LOCAL $BASE $REMOTE
 [merge]
     tool = mvimdiff
-	prompt = false
+    prompt = false
     keepBackup = false
 [color]
-	ui = true
+    ui = true
 [diff]
-	tool = default-difftool
+    tool = default-difftool
 [difftool "default-difftool"]
     cmd = mvim -c 'cd ~' -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
 [difftool]
-	prompt = false
+    prompt = false
 [remote "origin"]
     push = refs/heads/*:refs/heads/*
     push = refs/tags/*:refs/tags/*
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
