@@ -23,6 +23,7 @@
     lg = log --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
     mg = merge
     mt = mergetool
+	og = log --pretty=oneline --abbrev-commit --graph @{u}.. --stat
     pl = pull
     ps = push
     rl = rev-list --all
