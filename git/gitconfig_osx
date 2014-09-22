@@ -19,6 +19,7 @@
     ft = fetch
     gf = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --name-status
     gr = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative 
+	ic = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
     lf = log --pretty=format:'%Cred%H%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%ci)%Creset' --name-status
     lg = log --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
     mg = merge
