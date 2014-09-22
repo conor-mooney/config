@@ -7,8 +7,10 @@
 [alias]
     bl = blame
     br = branch
+    bs = branch -a
     ci = commit
     cl = clone
+	cn = clean
     co = checkout
     dc = difftool --dir-diff --cached
     df = diff
@@ -24,7 +26,9 @@
     pl = pull
     ps = push
     rl = rev-list --all
+	rs = reset
 	sa = stash
+	sm = submodule
     st = status
     sw = show
 	tg = tag
