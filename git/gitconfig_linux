@@ -33,6 +33,7 @@
     sa = stash
     sm = submodule
     st = status
+    su = log -1 --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
     sw = show
     tg = tag
     url = config --get remote.origin.url
