@@ -32,9 +32,11 @@
     rs = reset
     sa = stash
     sm = submodule
+	sr = show-ref
     st = status
     sw = show
     tg = tag
+	ts = show-ref --tags
     url = config --get remote.origin.url
 [mergetool "gvimdiff"]
     cmd = gvim -d -f $MERGED $LOCAL $BASE $REMOTE
