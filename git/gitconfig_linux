@@ -37,7 +37,7 @@
 	su = !git --no-pager log -n 1 --pretty=tformat:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
     sw = show
     tg = tag
-	ts = show-ref --tags
+	ts = show-ref --tags -d
     url = config --get remote.origin.url
 [mergetool "gvimdiff"]
     cmd = gvim -d -f $MERGED $LOCAL $BASE $REMOTE
