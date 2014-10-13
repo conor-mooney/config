@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ "$#" -ne 1 ]; then
+	echo "Syntax: har_to_csv <har file>"
+	exit 1
+fi
+
+jq '[.log.entries[] | {start_time: .startedDateTime, duration: .time, method: .request.method, url: .request.url, data_to_browser: .response.bodySize,  data_from_browser: .request.bodySize, status: .response.status} ]' $1 | json_to_csv
