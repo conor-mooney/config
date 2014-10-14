@@ -42,6 +42,10 @@ set encoding=utf-8
 set ffs=unix,mac,dos
 
 
+" Nerdtree
+let g:NERDTreeChDirMode=2
+
+
 " supertab
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
