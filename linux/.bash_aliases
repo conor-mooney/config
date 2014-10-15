@@ -7,6 +7,9 @@ alias md=mkdir
 alias hist=history
 alias ducs='du -hsc'
 
+clipin='xsel --clipboard'
+clipout='xsel --clipboard -o'
+
 alias vboxmanage='VBoxManage'
 alias vboxheadless='VBoxHeadless'
 
@@ -19,7 +22,5 @@ alias djadmin='django-admin.py'
 
 alias svndiff='svn diff --diff-cmd=meld'
 alias svnrecent='svn log -l10'
-
-alias git_graph="git log --pretty=format:'%h : %s' --graph"
 
 alias aack="ack --ignore-dir=node_modules --ignore-dir=public"

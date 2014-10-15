@@ -9,8 +9,10 @@ alias ducs='du -hsc'
 alias grep='grep --color'
 alias py=python
 
+alias clipin='pbcopy'
+alias clipout='pbpaste'
+
 alias vboxmanage=VBoxManage
 alias vboxheadless=VBoxHeadless
 alias vg=vagrant
 
-alias git_push='git push origin master'
