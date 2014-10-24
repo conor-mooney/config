@@ -12,10 +12,10 @@
     cl = clone
     cn = clean
     co = checkout
-    dc = diffall --cached
+    dc = diffall --copy-back -cached
     df = diff
-    ds = diffall --staged
-    dt = diffall 
+    ds = diffall ---copy-back -staged
+    dt = diffall --copy-back
 	dw = !gvim -p `git diff --name-only`
     ft = fetch
     gf = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --name-status
