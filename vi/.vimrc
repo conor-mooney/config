@@ -109,7 +109,7 @@ nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>q <C-W>q<CR>
 nmap <Leader>Q :qa!<CR>
-nmap <Leader>t :UndotreeToggle<CR>
+nmap <Leader>U :UndotreeToggle<CR>
 nmap <Leader>w :bp\|bd #<CR>
 "nmap <Leader>z :FufFile<CR>
 
