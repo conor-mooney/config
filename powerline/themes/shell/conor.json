@@ -11,7 +11,10 @@
 		},
 		"branch": {
 			"before": " "
-		}
+		},
+        "version": {
+			"before": "ⓔ  "
+        }
 	},
 	"segments": {
 		"left": [
@@ -23,19 +26,30 @@
 				"name": "hostname"
 			},
 			{
+				"name": "branch"
+			},
+            {
+                "module": "powerlinex.segment.rbenv",
+                "name": "version"
+            },
+			{
+				"name": "virtualenv"
+			},
+			{
 				"name": "cwd",
 				"args": {
 					"dir_limit_depth": 3
 				}
+			},
+			{
+				"module": "powerline.segments.shell",
+				"name": "jobnum"
 			}
 		],
 		"right": [
 			{
 				"module": "powerline.segments.shell",
 				"name": "last_pipe_status"
-			},
-			{
-				"name": "branch"
 			}
 		]
 	}
