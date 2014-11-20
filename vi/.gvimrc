@@ -4,7 +4,7 @@
 "set guifont=Ubuntu\ Mono\ 11
 "set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
 "set guifont=Liberation\ Mono\ for\ Powerline\ 10
-"set guifont=DejaVu\ Sans\ Mono\ Bold\ 9
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 
 "OS-X Fonts - uncomment one
 "set gfn=Menlo\ Regular:h12
