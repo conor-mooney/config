@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+db=$1
+mysql -uroot -proot -e"SELECT table_name, table_rows FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '$db'"
