@@ -16,6 +16,7 @@
     df = diff
     ds = diffall ---copy-back -staged
     dt = diffall --copy-back
+	du = diff --stat
 	dw = !gvim -p `git diff --name-only`
     ft = fetch
     gf = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --name-status
