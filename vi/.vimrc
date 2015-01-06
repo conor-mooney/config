@@ -1,6 +1,8 @@
 " colourschemes I like ...
-colorscheme jellybeans
+colorscheme jellybeans2
 "colorscheme desert2
+"colorscheme autumn
+"colorscheme autumnleaf
 "colorscheme kib_darktango
 "colorscheme norwaytoday
 "colorscheme pleasant
@@ -68,7 +70,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:100'
 let g:ctrlp_buffer_func = { 'enter': 'MyCtrlPMappings' }
 func! MyCtrlPMappings()
-    nnoremap <buffer> <silent> <c-@> :call <sid>DeleteBuffer()<cr>
+    nnoremap <buffer> <silent> <C-@> :call <sid>DeleteBuffer()<cr>
 endfunc
 func! s:DeleteBuffer()
     let line = getline('.')
@@ -107,6 +109,7 @@ nmap <Leader>g :TagbarToggle<CR>
 "nmap <Leader>j :CommandTJump<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
+nmap <Leader>m :NERDTreeMirror<CR>
 nmap <Leader>q <C-W>q<CR>
 nmap <Leader>Q :qa!<CR>
 nmap <Leader>U :UndotreeToggle<CR>
@@ -118,6 +121,9 @@ nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
 nnoremap ,g :call FilteringGetForSource().return()<CR>
 
+" sessions
+let g:session_autosave = 'yes'
+
 " Linux clipboard shortcuts - note that <CMD>ACVX work in MacVim by default
 "noremap <A-a> GVgg
 "noremap <A-c> "+y
@@ -125,6 +131,7 @@ nnoremap ,g :call FilteringGetForSource().return()<CR>
 "noremap <A-x> "+x
 
 " for ctags and coffeescript
+set tags=./tags
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 let showmarks_enable = 0
 
