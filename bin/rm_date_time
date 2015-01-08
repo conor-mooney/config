@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+cat $1 | sed  's/[[:digit:]]\{4\}-[[:digit:]]\{2\}-[[:digit:]]\{2\} [[:digit:]]\{2\}:[[:digit:]]\{2\}:[[:digit:]]\{2\}/xxxx-xx-xx xx:xx:xx/g'
