@@ -18,8 +18,24 @@ highlight DiffChange cterm=none ctermfg=black ctermbg=Yellow gui=none guifg=blac
 highlight DiffText cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=black guibg=Cyan
 
 "powerline fonts
+"airline & powerline fonts
+let g:airline_theme = 'light'
 let airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
+
+" jellybeans colour overides
+let g:jellybeans_overrides = {
+\ 'Todo':         { 'guifg': '303030', 'guibg': 'ffff00', 'ctermfg': 'Black', 'ctermbg': 'yellow', 'attr': 'bold' }, 
+\ 'Visual':       { 'guifg': '', 'guibg': '505050', 'attr': '', 'ctermfg': '', 'ctermbg': 'Black' },
+\ 'VertSplit':    { 'guifg': '555555', 'guibg': '808080', 'attr': '', 'ctermfg': 'Black', 'ctermbg': 'Black' },
+\}
+
+" light-line
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+      \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+      \ }
 
 set nocompatible
 set cursorline

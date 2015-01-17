@@ -1,8 +1,11 @@
 let g:airline#themes#light#palette = {}
 
-let s:N1 = [ '#ffffff' , '#005fff' , 255 , 27  ]
-let s:N2 = [ '#000087' , '#00dfff' , 18  , 45  ]
-let s:N3 = [ '#005fff' , '#afffff' , 27  , 159 ]
+"let s:N1 = [ '#ffffff' , '#005fff' , 255 , 27  ]
+"let s:N2 = [ '#000087' , '#00dfff' , 18  , 45  ]
+"let s:N3 = [ '#005fff' , '#afffff' , 27  , 159 ]
+let s:N1   = [ '#00005f' , '#dfff00' , 17  , 190 ]
+let s:N2   = [ '#ffffff' , '#444444' , 255 , 238 ]
+let s:N3   = [ '#9cffd3' , '#202020' , 85  , 234 ]
 let g:airline#themes#light#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 let g:airline#themes#light#palette.normal_modified = {
       \ 'airline_c': [ '#df0000' , '#ffdfdf' , 160     , 224     , ''     ] ,
@@ -22,7 +25,7 @@ let g:airline#themes#light#palette.insert_paste = {
 
 
 let g:airline#themes#light#palette.replace = copy(g:airline#themes#light#palette.insert)
-let g:airline#themes#light#palette.replace.airline_a = [ s:I2[0]   , '#ff0000' , s:I1[2] , 196     , ''     ]
+let g:airline#themes#light#palette.replace.airline_a = [ '#ffffff'  , '#ff0000' , s:I2[2] , 196     , ''     ]
 let g:airline#themes#light#palette.replace_modified = g:airline#themes#light#palette.insert_modified
 
 
