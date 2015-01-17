@@ -25,7 +25,7 @@ let g:airline#themes#light#palette.insert_paste = {
 
 
 let g:airline#themes#light#palette.replace = copy(g:airline#themes#light#palette.insert)
-let g:airline#themes#light#palette.replace.airline_a = [ '#ffffff'  , '#ff0000' , s:I2[2] , 196     , ''     ]
+let g:airline#themes#light#palette.replace.airline_a = [ '#ffffff'  , '#ff0000' , 255 , 196     , ''     ]
 let g:airline#themes#light#palette.replace_modified = g:airline#themes#light#palette.insert_modified
 
 
