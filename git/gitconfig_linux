@@ -5,6 +5,7 @@
     editor = vi
     excludesfile = /Users/conor/.gitignore_global
 [alias]
+	bc = !git branch -a | egrep "^\\\\*"
     bl = blame
     br = branch
     bs = branch -a

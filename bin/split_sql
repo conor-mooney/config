@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+dbcmp $1
+
+for i in *.sql
+do
+	rm_date_time $i > split_sql.tmp
+	rm_autoincrement split_sql.tmp > $i
+done
+
+rm split_sql.tmp
+
