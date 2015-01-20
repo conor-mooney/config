@@ -38,9 +38,12 @@ let g:airline#themes#light#palette.visual_modified = {
       \ }
 
 
-let s:IA1 = [ '#666666' , '#b2b2b2' , 242 , 249 , '' ]
-let s:IA2 = [ '#8a8a8a' , '#d0d0d0' , 245 , 252 , '' ]
-let s:IA3 = [ '#a8a8a8' , '#ffffff' , 248 , 255 , '' ]
+"let s:IA1 = [ '#666666' , '#b2b2b2' , 242 , 249 , '' ]
+"let s:IA2 = [ '#8a8a8a' , '#d0d0d0' , 245 , 252 , '' ]
+"let s:IA3 = [ '#a8a8a8' , '#ffffff' , 248 , 255 , '' ]
+let s:IA1 = [ '#303030' , '#b2b2b2' , 242 , 249 , '' ]
+let s:IA2 = [ '#303030' , '#d0d0d0' , 245 , 252 , '' ]
+let s:IA3 = [ '#303030' , '#ffffff' , 248 , 255 , '' ]
 let g:airline#themes#light#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 let g:airline#themes#light#palette.inactive_modified = {
       \ 'airline_c': [ '#df0000' , ''        , 160     , ''      , ''     ] ,
