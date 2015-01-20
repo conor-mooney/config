@@ -5,7 +5,7 @@ let g:airline#themes#light#palette = {}
 "let s:N3 = [ '#005fff' , '#afffff' , 27  , 159 ]
 let s:N1   = [ '#00005f' , '#dfff00' , 17  , 190 ]
 let s:N2   = [ '#ffffff' , '#444444' , 255 , 238 ]
-let s:N3   = [ '#9cffd3' , '#202020' , 85  , 234 ]
+let s:N3   = [ '#9cffd3' , '#606060' , 85  , 234 ]
 let g:airline#themes#light#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 let g:airline#themes#light#palette.normal_modified = {
       \ 'airline_c': [ '#df0000' , '#ffdfdf' , 160     , 224     , ''     ] ,
