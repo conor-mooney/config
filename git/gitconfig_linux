@@ -2,8 +2,8 @@
     name = Conor Mooney
     email = conor.mooney@gmail.com
 [core]
-    editor = vi
-    excludesfile = /Users/conor/.gitignore_global
+	editor = vim
+	excludesfile = /home/conor/.gitignore_global
 [alias]
 	bc = !git branch -a | egrep "^\\\\*"
     bl = blame
@@ -17,6 +17,7 @@
     df = diff
     ds = diffall ---copy-back -staged
     dt = diffall --copy-back
+    dtncb = diffall
 	du = diff --stat
 	dw = !gvim -p `git diff --name-only`
     ft = fetch
@@ -42,10 +43,13 @@
     tg = tag
 	ts = show-ref --tags -d
     url = config --get remote.origin.url
+[mergetool "diffconflicts"]
+	cmd = diffconflicts vim $BASE $LOCAL $REMOTE $MERGED
 [mergetool "gvimdiff"]
     cmd = gvim -d -f $MERGED $LOCAL $BASE $REMOTE
 [merge]
     tool = gvimdiff
+	diffconflictstrustExitCode = true
     prompt = false
     keepBackup = false
 [color]
