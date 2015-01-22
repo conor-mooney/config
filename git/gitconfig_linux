@@ -13,9 +13,9 @@
     cl = clone
     cn = clean
     co = checkout
-    dc = diffall --copy-back -cached
+    dc = diffall --cached
     df = diff
-    ds = diffall ---copy-back -staged
+    ds = diffall --staged
     dt = diffall --copy-back
     dtncb = diffall
 	du = diff --stat
