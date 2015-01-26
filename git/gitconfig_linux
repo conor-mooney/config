@@ -15,9 +15,9 @@
     co = checkout
     dc = diffall --cached
     df = diff
+    dn = diffall
     ds = diffall --staged
     dt = diffall --copy-back
-    dtncb = diffall
 	du = diff --stat
 	dw = !gvim -p `git diff --name-only`
     ft = fetch
@@ -27,11 +27,12 @@
     lf = log --pretty=format:'%Cred%H%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%ci)%Creset' --name-status
     lg = log --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
     mg = merge
-    mgnc = merge --no-commit --no-ff
+	mn = merge --no-commit --no-ff
     mt = mergetool
     og = log --pretty=oneline --abbrev-commit --graph @{u}.. --stat
     pl = pull
     ps = push
+	rh = reset --hard
     rl = rev-list --all
     rs = reset
     sa = stash
@@ -42,7 +43,7 @@
     sw = show
     tg = tag
 	ts = show-ref --tags -d
-    url = config --get remote.origin.url
+    ur = config --get remote.origin.url
 [mergetool "diffconflicts"]
 	cmd = diffconflicts vim $BASE $LOCAL $REMOTE $MERGED
 [mergetool "gvimdiff"]

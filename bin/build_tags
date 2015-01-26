@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+ctags -R --languages=ruby --exclude=.git --exclude=log .
+ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
+gem ctags
