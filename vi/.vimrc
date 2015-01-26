@@ -105,6 +105,11 @@ let g:ctrlp_custom_ignore = {
 
 " srcexpl
 nmap <Leader>j :SrcExplToggle<CR>
+let g:SrcExpl_winHeight = 12
+let g:SrcExpl_refreshTime = 100
+let g:SrcExpl_searchLocalDef = 1 
+let g:SrcExpl_isUpdateTags = 0 
+let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
 let g:SrcExpl_jumpKey = "<ENTER>"
 let g:SrcExpl_pluginList = [
          \ "__Tag_Bar__",
@@ -118,6 +123,7 @@ let Tlist_Use_Right_Window = 1
 " ctrlp
 nmap <Leader>b :CtrlPBuffer<CR>
 nmap <Leader>z :CtrlPMRU<CR>
+nmap <Leader>. :CtrlPTag<CR>
 
 nmap <Leader>e :Explore<CR>
 nmap <Leader>f :Ack 
