@@ -37,6 +37,15 @@ let g:lightline = {
       \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
       \ }
 
+
+" textile
+" " OSX
+let g:TnextileBrowser="Google Chrome"
+"Linux
+"let g:TextileOS="Linux"
+"let g:TextileBrowser="/usr/bin/google-chrome"
+ 
+
 set nocompatible
 set cursorline
 set laststatus=2
