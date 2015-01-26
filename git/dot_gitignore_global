@@ -1,0 +1,9 @@
+tags
+!tags/
+*.swp
+*.orig
+log/*
+tmp/*
+db/seed.sql
+config/database.yml
+
