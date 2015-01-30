@@ -7,6 +7,8 @@ let did_load_filetypes_userafter = 1
 
 augroup filetypedetect
     au! BufRead,BufNewFile *.json set filetype=json
+    au! BufRead,BufNewFile *.har set filetype=json
     au! BufRead,BufNewFile *.py set filetype=python
 	au! BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
+	au BufNewFile,BufRead *.redmine set ft=redminewiki
 augroup END
