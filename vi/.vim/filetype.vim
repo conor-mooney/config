@@ -9,6 +9,6 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.json set filetype=json
     au! BufRead,BufNewFile *.har set filetype=json
     au! BufRead,BufNewFile *.py set filetype=python
+	au! BufNewFile,BufRead *.redmine set filetype=redminewiki
 	au! BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
-	au BufNewFile,BufRead *.redmine set ft=redminewiki
 augroup END
