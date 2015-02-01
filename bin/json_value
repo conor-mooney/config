@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# extract value part of JSON key/valu pair
+
+STDIN.each_line do |j|
+  m = j.match(/"(.*?)":\s+"(.*)".*$/)
+
+  if !m.nil? and m.length >=2
+    print m[2]
+  end
+end
+

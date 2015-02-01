@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# simple script to unescape JSON data that is embedded in JSON (e.g. chrome har file)
+# depands on 'pretty_json' utility being on path
+#
+# Syntax:
+#         $ cat <file> | json_to_json
+#
+# to use from vim
+#         :<range>!json_to_json
+
+cat - | sed 's/\\"/"/g' | sed 's/"{/{/g' | sed 's/}"/}/g' | sed 's/\\\\"/\\"/g' | pretty_json
