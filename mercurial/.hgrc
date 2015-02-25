@@ -64,6 +64,7 @@ og = outgoing --style=/Users/conor/.mercurial/lf.tmpl
 pl = pull
 ps = push
 pt = parents
+rh = up --clean
 rs = resolve
 rt = revert
 sa = shelve
