@@ -329,7 +329,7 @@ call s:X("Cursor",g:jellybeans_background_color,"b0d0f0","","","")
 
 call s:X("LineNr","605958",g:jellybeans_background_color,"none",s:termBlack,"")
 call s:X("CursorLineNr","ccc5c4","","none","White","")
-call s:X("Comment","888888","","italic","Grey","")
+call s:X("Comment","888888","","italic","LightGrey","")
 call s:X("Todo","c7c7c7","","bold","White",s:termBlack)
 
 call s:X("StatusLine","000000","dddddd","italic","","White")
@@ -348,14 +348,14 @@ call s:X("Constant","cf6a4c","","","Red","")
 call s:X("Special","799d6a","","","Green","")
 call s:X("Delimiter","668799","","","Grey","")
 
-call s:X("String","99ad6a","","","Green","")
-call s:X("StringDelimiter","556633","","","DarkGreen","")
+call s:X("String","99ad6a","","","LightGreen","")
+call s:X("StringDelimiter","556633","","","LightGreen","")
 
-call s:X("Identifier","c6b6ee","","","LightCyan","")
+call s:X("Identifier","c6b6ee","","bold","LightCyan","")
 call s:X("Structure","8fbfdc","","","LightCyan","")
-call s:X("Function","fad07a","","","Yellow","")
-call s:X("Statement","8197bf","","","DarkBlue","")
-call s:X("PreProc","8fbfdc","","","LightBlue","")
+call s:X("Function","fad07a","","bold","Yellow","")
+call s:X("Statement","8197bf","","bold","DarkBlue","")
+call s:X("PreProc","8fbfdc","","bold","LightBlue","")
 
 hi! link Operator Structure
 
@@ -413,8 +413,8 @@ hi! link pythonOperator Statement
 " Ruby
 
 hi! link rubySharpBang Comment
-call s:X("rubyClass","447799","","","DarkBlue","")
-call s:X("rubyIdentifier","c6b6fe","","","Cyan","")
+call s:X("rubyClass","447799","","","DarkRed","")
+call s:X("rubyIdentifier","c6b6fe","","","Magenta","")
 hi! link rubyConstant Type
 hi! link rubyFunction Function
 
