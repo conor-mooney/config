@@ -71,6 +71,7 @@ set ffs=unix,mac,dos
 
 " Nerdtree
 let g:NERDTreeChDirMode=2
+let g:NERDTreeIgnore = ['\.pyc$']
 
 
 " supertab
