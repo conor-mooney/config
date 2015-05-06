@@ -13,6 +13,7 @@ alias clipout='xsel --clipboard -o'
 alias l='ls'
 alias ll='ls -lh'
 alias lr='ls -lhrt'
+alias browse='nautilus --browser'
 
 alias dirdiff='diff -rbwq'
 
