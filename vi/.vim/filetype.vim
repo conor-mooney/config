@@ -1,5 +1,9 @@
 au! BufRead,BufNewFile *.har set filetype=json
 
+au! FileType gitcommit setlocal spell spelllang=en_gb
+au! BufRead,BufNewFile *.md setlocal spell spelllang=en_gb
+au! BufRead,BufNewFile *.txt setlocal spell spelllang=en_gb
+
 if exists("did_load_filetypes_userafter")
     finish
 endif
