@@ -21,11 +21,11 @@ Config files for Ack etc.
 
 ctags
 -----
-Ctags configuration for use with TagList or TagBar VI plugin.  It contains extra configursation for use with Coffeescript files.
+Ctags configuration for use with TagList or TagBar VI plugin.  It contains extra configuration for use with Coffeescript files.
 
 git
 ---
-Contains sample `.gitconfig` files.  There are both Linux and OS-X version sof this configuration.
+Contains sample `.gitconfig` files.  There are both Linux and OS-X versions of this configuration.
 
 linux
 -----
@@ -145,7 +145,7 @@ Run the `link_plugin` script from the `bundle` folder to link in the default (us
 
 **ack**
 
-* This ack pluging requires you to have already installed the ack recurisive grep utility.  The plugin just glues `ack` and `vi` together.
+* This ack pluging requires you to have already installed the ack recursive grep utility.  The plugin just glues `ack` and `vi` together.
 
 **command-t**
 *Note ctrlp is better (imho) than either command-t or fuzzy-finder*
