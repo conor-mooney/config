@@ -109,13 +109,16 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Python Virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # Node
-export NVM_DIR=$HOME/.nvm
-source ~/.nvm/nvm.sh
+#export NVM_DIR=$HOME/.nvm
+#[[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# Powerline
+. $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+

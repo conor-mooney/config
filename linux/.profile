@@ -28,4 +28,12 @@ export PYTHONPATH="$PYTHONPATH:$HOME/projects"
 export SVN_EDITOR=vi
 export WORKON_HOME=~/.python_envs
 
+# RBENV
+export PATH=.:$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+
+# node
+#export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
+export NVM_DIR=$HOME/.nvm
+
 set -o ignoreeof
