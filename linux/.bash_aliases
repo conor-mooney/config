@@ -2,6 +2,8 @@ alias ~='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
+alias vi='vim'
 alias md=mkdir
 
 alias hist=history
@@ -21,6 +23,7 @@ alias vboxmanage='VBoxManage'
 alias vboxheadless='VBoxHeadless'
 
 alias py=python
+alias py3=python3
 alias jy=jython
 alias djm='python manage.py'
 alias djmanage='python manage.py'
@@ -30,10 +33,10 @@ alias djadmin='django-admin.py'
 alias svndiff='svn diff --diff-cmd=meld'
 alias svnrecent='svn log -l10'
 
+alias be='bundle exec'
 alias rr='rails runner'
 
 alias aack="ack --ignore-dir=node_modules --ignore-dir=public"
 
-alias rscurl="curl -g -k -urockSteady:Simpsons -H\"Accept: application/json\" -X GET"
-
-alias be='bundle exec'
+alias b2d=boot2docker
+alias dkr=docker
