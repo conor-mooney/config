@@ -1,14 +1,14 @@
 [global_config]
   title_hide_sizetext = True
 [keybindings]
-  close_window = <Super>w
+  close_window = <Shift><Super>w
   group_tab = <Super>g
   group_all = <Alt><Super>g
-  toggle_zoom = <Super>Return
+  toggle_zoom = <Shift><Super>Return
   scaled_zoom = <Super>z
   zoom_in = <Super>equal
   split_vert = <Super>d
-  full_screen = <Shift><Super>Return
+  full_screen = <Super>Return
   prev_tab = <Super>Left
   switch_to_tab_6 = <Super>6
   switch_to_tab_7 = <Super>7
@@ -21,7 +21,7 @@
   switch_to_tab_8 = <Super>8
   switch_to_tab_3 = <Super>3
   zoom_out = <Super>minus
-  close_term = <Super>Escape
+  close_term = <Super>w
   new_tab = <Super>t
   copy = <Super>c
   paste = <Super>v
@@ -33,8 +33,10 @@
 [profiles]
   [[default]]
     palette = "#2e3436:#f0707c:#4e9a06:#c4a000:#3c87e9:#b968c6:#06989a:#d3d7cf:#555753:#eb6b6b:#8ae234:#fce94f:#1084d1:#eb7ade:#34e2e2:#eeeeec"
-    font = DejaVu Sans Mono 9
+    copy_on_selection = True
+    background_image = None
     background_darkness = 0.78
+    background_type = transparent
     use_system_font = False
     foreground_color = "#ffffff"
     copy_on_selection = True
