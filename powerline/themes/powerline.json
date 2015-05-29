@@ -11,6 +11,9 @@
 	},
 	"spaces": 1,
 	"segment_data": {
+        "version": {
+            "before": "ⓔ  "
+        },
 		"branch": {
 			"before": " "
 		},
