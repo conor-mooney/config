@@ -2,7 +2,7 @@
 # This script links in the most useful vim plugins from the .vim/available_plugins folder
 # script should be run from $HOME/.vim/bundle folder
 #
-for p in L9 ack csv.vim ctrlp.vim delmitmate dirdiff emmet-vim vim-fugitive hexman html_autoclose nerdcommenter nerdtree quich-filter showmarks source-explorer supertab syntastic tagbar toggle_maximize undotree vim-airline vim-autoformat vim-closetag vim-coffee-script vim-jade vim-javascript-syntax vim-json vim-lawrencium vim-mustache-handlebars vim-nodejs-complete powerline vim-rails vim-ruby vim-signify vim-surround vim-unimpaired yaml vimball align SudoEdit.vim textile
+for p in L9 ack csv.vim ctrlp.vim delmitmate dirdiff emmet-vim vim-fugitive hexman html_autoclose nerdcommenter nerdtree quich-filter showmarks source-explorer supertab syntastic tagbar toggle_maximize undotree vim-airline vim-autoformat vim-closetag vim-coffee-script vim-jade vim-javascript-syntax vim-json vim-lawrencium vim-mustache-handlebars vim-nodejs-complete powerline vim-rails vim-ruby vim-signify vim-surround vim-unimpaired yaml vimball align SudoEdit.vim textile xptemplate
 do
 	echo "Activating plugin --> $p"
 	ln -nfs ../available_plugins/$p .
