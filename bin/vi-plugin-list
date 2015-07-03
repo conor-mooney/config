@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+vim_config=$HOME/.vim
+available_plugins=$vim_config/available_plugins
+enabled_plugins=$vim_config/bundle
+
+if [ -d $available_plugins ] ; then
+	ls $available_plugins
+else
+	echo "Missing folder $available_plugins"
+	exit 1
+fi

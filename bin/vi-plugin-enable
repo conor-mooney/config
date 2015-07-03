@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+vim_config=$HOME/.vim
+available_plugins=$vim_config/available_plugins
+enabled_plugins=$vim_config/bundle
+
+if [ $# -ne 1 ] ; then
+	echo "Syntax: $0 <plugin name>"
+	exit 1
+else
+	plugin_name=$1
+fi
+
+if [ ! -d $available_plugins ] ; then
+	echo "Missing folder: $available_plugins"
+	exit 1
+fi
+
+if [ ! -d $enabled_plugins ] ; then
+	echo "Missing folder: $enabled_plugins"
+	exit 1
+fi
+
+if [ -d $enabled_plugins/$plugin_name ] ; then
+	echo "Plugin: $plugin_name already enabled!"
+	exit 1
+fi
+
+if [ ! -d $available_plugins/$plugin_name ] ; then
+	echo "Plugin: $plugin_name not found!"
+	exit 1
+fi
+
+cd $enabled_plugins ; ln -nfs ../available_plugins/$plugin_name .
+echo "Enabled plugin: $plugin_name"
+
