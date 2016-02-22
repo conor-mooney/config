@@ -186,6 +186,10 @@ function MyDiff()
 	silent execute "!diff -a --binary " . g:DirDiffAddArgs . " " . v:fname_in . " " . v:fname_new .  " > " . v:fname_out
 endfunction
 
+
+" spell check
+ nmap <Leader>l :setlocal spell! spelllang=en_gb<CR>
+
 call pathogen#incubate()
 call pathogen#helptags()
 call pathogen#infect()
