@@ -1,14 +1,16 @@
 " colourschemes I like ...
-colorscheme jellybeans2
-"colorscheme desert2
 "colorscheme autumn
 "colorscheme autumnleaf
+"colorscheme desert2
+"colorscheme github
+colorscheme jellybeans2
+"colorscheme kellys
 "colorscheme kib_darktango
+"colorscheme lucius
 "colorscheme norwaytoday
 "colorscheme pleasant
 "colorscheme pacific
 "colorscheme perfect
-"colorscheme lucius
 "LuciusWhite
 
 " override diff colours for any selected colour scheme
@@ -71,7 +73,8 @@ set ffs=unix,mac,dos
 
 " Nerdtree
 let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore = ['\.pyc$']
+let g:NERDTreeIgnore = ['\.pyc$', '\.o$', '\.d$', '\.crf$']
+let g:NERDTreeBookmarksSort=1
 
 
 " supertab
@@ -142,6 +145,7 @@ nmap <Leader>g :TagbarToggle<CR>
 nmap <Leader>k :call DiffWithFileFromDisk()<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>m :NERDTreeMirror<CR>
+nmap <Leader>t :NERDTreeFind<CR>
 nmap <Leader>q <C-W>q<CR>
 nmap <Leader>Q :qa!<CR>
 nmap <Leader>U :UndotreeToggle<CR>
@@ -162,10 +166,12 @@ let g:session_autosave = 'yes'
 "noremap <A-v> "+p
 "noremap <A-x> "+x
 
-" for ctags and coffeescript
-set tags=./tags
+" coffee script
 let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 let showmarks_enable = 0
+
+" ctags
+set tags=./tags;
 
 " diff toggle
 nmap <Leader>c :diffthis<CR>
@@ -185,7 +191,6 @@ set diffexpr=MyDiff()
 function MyDiff()
 	silent execute "!diff -a --binary " . g:DirDiffAddArgs . " " . v:fname_in . " " . v:fname_new .  " > " . v:fname_out
 endfunction
-
 
 " spell check
  nmap <Leader>l :setlocal spell! spelllang=en_gb<CR>
