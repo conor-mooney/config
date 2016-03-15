@@ -114,6 +114,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)|(/tmp/)$',
   \ 'file': '\v\.(exe|so|dll|orig)$',
   \ }
+let g:ctrlp_arg_map=1
 
 
 " srcexpl
