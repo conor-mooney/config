@@ -153,6 +153,9 @@ nmap <Leader>U :UndotreeToggle<CR>
 nmap <Leader>w :bp\|bd #<CR>
 "nmap <Leader>z :FufFile<CR>
 
+" latex
+nmap <Leader>p :!latexmk -pdf %<CR>
+
 " quich finder
 nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
