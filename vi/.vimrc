@@ -73,7 +73,7 @@ set ffs=unix,mac,dos
 
 " Nerdtree
 let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore = ['\.pyc$', '\.o$', '\.d$', '\.crf$']
+let g:NERDTreeIgnore = ['\.class$', '\.pyc$', '\.o$', '\.d$', '\.crf$']
 let g:NERDTreeBookmarksSort=1
 
 
