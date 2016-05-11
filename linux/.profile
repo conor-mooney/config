@@ -20,6 +20,12 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH=".:$HOME/bin:$PATH"
 fi
+
+# add local/bin to path (needed for powerline)
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$PATH:$HOME/.local/bin"
+fi
+
 export CDPATH=".:$HOME:$HOME/documents:$HOME/projects"
 
 # Python
