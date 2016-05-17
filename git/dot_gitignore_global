@@ -1,9 +1,10 @@
+config/database.yml
+db/seed.sql
+log/*
+*.orig
+__pycache__
+.*.swp
+*.swp
 tags
 !tags/
-*.swp
-*.orig
-log/*
 tmp/*
-db/seed.sql
-config/database.yml
-
