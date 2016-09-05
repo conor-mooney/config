@@ -2,6 +2,8 @@ Configuration and utilities
 ===========================
 A repository containing settings / configurations for Linux / OS-X that I find useful.
 
+As of 2016-09-05 maintained in GitLab
+
 bin
 ---
 Contains utilities (mostly Bash shell) that I find useful.
