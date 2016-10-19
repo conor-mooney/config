@@ -5,6 +5,7 @@
 	editor = vim
 	excludesfile = /home/conor/.gitignore_global
 [alias]
+	al = config --get-regexp ^alias\\.
 	bc = !git branch -a | egrep "^\\\\*"
     bl = blame
     br = branch

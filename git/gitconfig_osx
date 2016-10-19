@@ -2,9 +2,10 @@
     name = Conor Mooney
     email = conor.mooney@gmail.com
 [core]
-    editor = vi
+	editor = vim
     excludesfile = /Users/conor/.gitignore_global
 [alias]
+	al = config --get-regexp ^alias\\.
 	bc = !git branch -a | egrep "^\\\\*"
     bl = blame
     br = branch
@@ -69,3 +70,5 @@
 [mergetool "sourcetree"]
     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
+[url "https://github"]
+	insteadOf = git://github
