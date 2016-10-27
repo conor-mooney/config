@@ -1,9 +1,10 @@
 " colourschemes I like ...
 "colorscheme autumn
 "colorscheme autumnleaf
+colorscheme colorsbox-stbright
 "colorscheme desert2
 "colorscheme github
-colorscheme jellybeans2
+"colorscheme jellybeans2
 "colorscheme kellys
 "colorscheme kib_darktango
 "colorscheme lucius
@@ -11,6 +12,10 @@ colorscheme jellybeans2
 "colorscheme pleasant
 "colorscheme pacific
 "colorscheme perfect
+"colorscheme pleasant
+"colorscheme predawn
+"solarized8_low_high
+"colorscheme term
 "LuciusWhite
 
 " override diff colours for any selected colour scheme
@@ -73,7 +78,7 @@ set ffs=unix,mac,dos
 
 " Nerdtree
 let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore = ['\.class$', '\.pyc$', '\.o$', '\.d$', '\.crf$']
+let g:NERDTreeIgnore = ['__pycache__', '\.class$', '\.pyc$', '\.o$', '\.d$', '\.crf$']
 let g:NERDTreeBookmarksSort=1
 
 
@@ -154,7 +159,8 @@ nmap <Leader>w :bp\|bd #<CR>
 "nmap <Leader>z :FufFile<CR>
 
 " latex
-nmap <Leader>p :!latexmk -pdf %<CR>
+nmap <Leader>P :!latexmk -shell-escape -pdf %<CR>
+nmap <Leader>p :!latexmk -shell-escape -pdf main<CR>
 
 " quich finder
 nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
