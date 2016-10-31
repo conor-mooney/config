@@ -10,6 +10,8 @@
     bl = blame
     br = branch
     bs = branch -a
+    bsr = branch -r
+    bsl = branch -l
     ci = commit
     cl = clone
     cn = clean
