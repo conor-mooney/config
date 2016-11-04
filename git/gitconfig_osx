@@ -33,6 +33,7 @@
     mt = mergetool
     og = log --pretty=oneline --abbrev-commit --graph @{u}.. --stat
     pl = pull
+	pr = request-pull
     ps = push
 	rh = reset --hard
     rl = rev-list --all
