@@ -37,3 +37,5 @@ alias dkr=docker
 alias be='bundle exec'
 alias rr='rails runner'
 
+alias ct='ctags -R `pwd`'
+alias et='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'
