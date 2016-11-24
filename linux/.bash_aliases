@@ -41,5 +41,5 @@ alias aack="ack --ignore-dir=node_modules --ignore-dir=public"
 alias b2d=boot2docker
 alias dkr=docker
 
-alias ct='ctags -R `pwd`'
-alias et='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'
+alias tags='ctags -R `pwd`'
+alias pytags='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'

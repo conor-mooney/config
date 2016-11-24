@@ -44,5 +44,5 @@ alias jcurl='curl -H "Content-Type: application/json"'
 
 alias lt='latexmk -shell-escape -pdf'
 
-alias ct='ctags -R `pwd`'
-alias et='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'
+alias tags='ctags -R `pwd`'
+alias pytags='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'
