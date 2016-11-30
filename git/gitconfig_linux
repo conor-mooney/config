@@ -36,11 +36,13 @@
     pl = pull
 	pr = request-pull
     ps = push
+	rb = rebase
 	rh = reset --hard
     rl = rev-list --all
     rs = reset
     sa = stash
     sm = submodule
+	sq = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
 	sr = show-ref
     st = status
 	su = !git --no-pager log -n 1 --pretty=tformat:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
