@@ -65,6 +65,6 @@
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
-    cmd = gvim -c 'cd ~' -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
+    cmd = gvim +'colorscheme github' -c 'cd ~' -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
 [difftool]
     prompt = false

@@ -1,2 +1,5 @@
 #/usr/bin/env bash
-mvim -c ":DirDiff $1 $2 "
+#OSX
+mvim +'colorscheme github' -c ":DirDiff $1 $2 "
+# LInux
+#gvim +'colorscheme github' -c ":DirDiff $1 $2 "

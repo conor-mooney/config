@@ -51,7 +51,7 @@
 	ts = show-ref --tags -d
     ur = config --get remote.origin.url
 [mergetool "mvimdiff"]
-    cmd = mvim -d -f $MERGED $LOCAL $BASE $REMOTE
+    cmd = mvim +'colorscheme github' -d -f $MERGED $LOCAL $BASE $REMOTE
 [merge]
     tool = mvimdiff
     prompt = false
@@ -61,7 +61,7 @@
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
-    cmd = mvim -c 'cd ~' -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
+    cmd = mvim +'colorscheme github' -c 'cd ~' -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE
 [difftool]
     prompt = false
 [remote "origin"]
