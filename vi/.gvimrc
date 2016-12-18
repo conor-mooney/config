@@ -15,6 +15,7 @@ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 if &diff
     autocmd vimenter * TagbarClose
     autocmd vimenter * NERDTreeClose
+	colorscheme github
 else
     autocmd vimenter * TagbarToggle
     autocmd vimenter * NERDTreeToggle | wincmd p

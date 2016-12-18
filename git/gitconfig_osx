@@ -51,9 +51,11 @@
 	ts = show-ref --tags -d
     ur = config --get remote.origin.url
 [mergetool "mvimdiff"]
-    cmd = mvim +'colorscheme github' -d -f $MERGED $LOCAL $BASE $REMOTE
+	;cmd = mvim +'colorscheme github' -d -f $MERGED $LOCAL $BASE $REMOTE
 [merge]
-    tool = mvimdiff
+	cmd = gvimdiff +'colorscheme github'
+    tool = gvimdiff
+	conflictstyle = diff3
     prompt = false
     keepBackup = false
 [color]
