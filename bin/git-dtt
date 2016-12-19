@@ -1,0 +1,1 @@
+gvim +'colorscheme github' -p $(git df --name-only $1) -c "tabdo :Gvdiff $1"
