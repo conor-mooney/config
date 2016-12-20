@@ -80,3 +80,5 @@
     trustExitCode = true
 [url "https://github"]
 	insteadOf = git://github
+[push]
+	default = current

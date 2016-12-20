@@ -1,1 +1,19 @@
-gvim +'colorscheme github' -p $(git df --name-only $1) -c "tabdo :Gvdiff $1"
+#!/usr/bin/env bash
+START_DIR=`pwd`
+CURRENT_DIR=`pwd`
+ROOT='/'
+
+until [ "$CURRENT_DIR" == "$HOME" ] || [ "$CURRENT_DIR" == "$ROOT" ] || [ -d "$CURRENT_DIR/.git" ]
+do
+	cd ..
+	CURRENT_DIR=`pwd`
+done
+
+if [ -d "$CURRENT_DIR/.git" ]
+then 
+	gvim +'colorscheme github' -p $(git df --name-only $1) -c "tabdo :Gvdiff $1"
+else
+	echo "No git repo found"
+fi
+
+cd $START_DIR
