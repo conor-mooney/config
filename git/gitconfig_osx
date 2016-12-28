@@ -6,7 +6,7 @@
     excludesfile = /Users/conor/.gitignore_global
 [alias]
 	al = config --get-regexp ^alias\\.
-	bc = !git branch -a | egrep "^\\\\*"
+	bc = !git branch -a | egrep "^\\\\*"    # show current branch
     bl = blame
     br = branch
     bs = branch -a
