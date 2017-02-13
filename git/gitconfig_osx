@@ -40,6 +40,7 @@
 	rh = reset --hard
     rl = rev-list --all
     rs = reset
+	rv = revert
     sa = stash
     sm = submodule
 	sq = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
