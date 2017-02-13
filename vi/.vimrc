@@ -168,6 +168,9 @@ nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,F :call FilteringNew().parseQuery(input('>'), '\|').run()<CR>
 nnoremap ,g :call FilteringGetForSource().return()<CR>
 
+" autopep8
+let g:autopep8_ignore="E20,E22,E26,W265,E242,E401"
+
 " sessions
 let g:session_autosave = 'yes'
 
