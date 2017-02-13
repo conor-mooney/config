@@ -144,6 +144,7 @@ nmap <Leader>b :CtrlPBuffer<CR>
 nmap <Leader>z :CtrlPMRU<CR>
 nmap <Leader>. :CtrlPTag<CR>
 
+nmap <Leader>a $p
 nmap <Leader>e :Explore<CR>
 nmap <Leader>f :Ack 
 nmap <Leader>g :TagbarToggle<CR>
