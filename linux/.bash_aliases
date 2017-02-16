@@ -43,3 +43,6 @@ alias dkr=docker
 
 alias tags='ctags -R `pwd`'
 alias pytags='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'
+
+alias tmux='TERM=xterm-256color tmux'
+
