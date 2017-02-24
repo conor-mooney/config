@@ -45,6 +45,7 @@ alias jcurl='curl -H "Content-Type: application/json"'
 
 alias tags='ctags -R `pwd`'
 alias pytags='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'
+alias py3tags='ctags -a -R $VIRTUAL_ENV/lib/python3.4/site-packages'
 
 alias tmux='TERM=xterm-256color tmux'
 

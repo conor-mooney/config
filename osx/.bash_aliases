@@ -46,3 +46,4 @@ alias lt='latexmk -shell-escape -pdf'
 
 alias tags='ctags -R `pwd`'
 alias pytags='ctags -a -R $VIRTUAL_ENV/lib/python2.7/site-packages'
+alias py3tags='ctags -a -R $VIRTUAL_ENV/lib/python3.5/site-packages'
